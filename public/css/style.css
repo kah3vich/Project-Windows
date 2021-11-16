@@ -697,8 +697,8 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 7;
   grid-area: indexCatalog-1;
-  width: 517px;
-  height: 242px;
+  width: 100%;
+  height: 100%;
   background: #fff;
   position: relative;
   overflow: hidden;
@@ -740,16 +740,30 @@
   background: #fff;
 }
 
+.ind-catalog__block-item-1-img::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 35px;
+  z-index: 4;
+  width: 459px;
+  height: 455px;
+  -webkit-transform: rotate(126deg);
+      -ms-transform: rotate(126deg);
+          transform: rotate(126deg);
+  background: rgba(19,144,240,.3);
+}
+
 .ind-catalog__block-item-5 {
   -ms-grid-row: 7;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: indexCatalog-5;
-  width: 244px;
-  height: 152px;
+  width: 100%;
+  height: 100%;
   background: #fff;
-  padding: 12px 0 0 22px;
+  padding: 10px 0 0 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -778,7 +792,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
-  line-height: 34px;
+  line-height: 27px;
   color: #000;
 }
 
@@ -798,10 +812,10 @@
   -ms-grid-column: 5;
   -ms-grid-column-span: 3;
   grid-area: indexCatalog-6;
-  width: 259px;
-  height: 152px;
+  width: 100%;
+  height: 100%;
   background: #fff;
-  padding: 12px 0 0 22px;
+  padding: 10px 0 0 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -830,7 +844,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
-  line-height: 34px;
+  line-height: 27px;
   color: #000;
 }
 
@@ -850,12 +864,12 @@
   -ms-grid-column: 9;
   -ms-grid-column-span: 3;
   grid-area: indexCatalog-2;
-  width: 256px;
-  height: 156px;
+  width: 100%;
+  height: 100%;
   left: 589px;
   top: 328px;
   background: #fff;
-  padding: 16px 0 0 22px;
+  padding: 10px 0 0 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -884,7 +898,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
-  line-height: 34px;
+  line-height: 27px;
   color: #000;
 }
 
@@ -904,10 +918,10 @@
   -ms-grid-column: 13;
   -ms-grid-column-span: 3;
   grid-area: indexCatalog-3;
-  width: 256px;
-  height: 156px;
+  width: 100%;
+  height: 100%;
   background: #fff;
-  padding: 16px 0 0 22px;
+  padding: 10px 0 0 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -936,7 +950,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
-  line-height: 34px;
+  line-height: 27px;
   color: #000;
 }
 
@@ -956,10 +970,10 @@
   -ms-grid-column: 17;
   -ms-grid-column-span: 3;
   grid-area: indexCatalog-4;
-  width: 255px;
-  height: 156px;
+  width: 100%;
+  height: 100%;
   background: #fff;
-  padding: 16px 0 0 22px;
+  padding: 10px 0 0 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -988,7 +1002,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
-  line-height: 34px;
+  line-height: 27px;
   color: #000;
 }
 
@@ -1008,10 +1022,10 @@
   -ms-grid-column: 9;
   -ms-grid-column-span: 5;
   grid-area: indexCatalog-7;
-  width: 386px;
-  height: 239px;
+  width: 100%;
+  height: 100%;
   background: #fff;
-  padding: 31px 0 0 22px;
+  padding: 20px 0 0 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1046,7 +1060,7 @@
 }
 
 .ind-catalog__block-item-7-text {
-  margin: 14px 0 0 0;
+  margin: 14px 0 13px 0;
   width: 306px;
   font-family: TT Norms;
   font-style: normal;
@@ -1062,10 +1076,10 @@
   -ms-grid-column: 15;
   -ms-grid-column-span: 5;
   grid-area: indexCatalog-8;
-  width: 392px;
-  height: 239px;
+  width: 100%;
+  height: 100%;
   background: #fff;
-  padding: 31px 0 0 22px;
+  padding: 20px 0 0 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1471,7 +1485,7 @@
 }
 
 .ind-services__list-item:nth-of-type(3)::after {
-  content: url(../../img/index/serv-3.png);
+  content: url(../img/index/serv-3.png);
   position: absolute;
   top: 61px;
   z-index: 3;
@@ -1493,7 +1507,7 @@
 }
 
 .ind-services__list-item:nth-of-type(3)::before {
-  content: url(../../img/index/serv-4.png);
+  content: url(../img/index/serv-4.png);
   position: absolute;
   z-index: 2;
   top: 101px;
@@ -1815,9 +1829,8 @@ h6 {
 }
 
 .header__wrapper-basket-count {
-  width: 17px;
-  padding: 2px 0 0 0;
-  height: 17px;
+  width: 23px;
+  height: 23px;
   background: #286cf0;
   border-radius: 50%;
   display: -webkit-box;
@@ -1970,7 +1983,7 @@ h6 {
 .select-placeholder {
   font-family: TT Norms;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #000;

@@ -186,9 +186,8 @@ p {
             align-items: center;
             justify-content: space-between;
             &-count {
-                width: 17px;
-                padding: 2px 0 0 0;
-                height: 17px;
+                width: 23px;
+                height: 23px;
                 background: #286CF0;
                 border-radius: 50%;
                 display: flex;
@@ -303,7 +302,7 @@ p {
 .select-placeholder {
     font-family: TT Norms;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
