@@ -342,9 +342,15 @@
                                 option(value="Поворотное") Поворотное
                                 option(value="Откидное") Откидное
                                 option(value="Поворотно-откидное") Поворотно-откидное
+                            select#leaf-2.display-n
+                                option(value="")
+                                option(value="Глухое") Глухое
+                                option(value="Поворотное") Поворотное
+                                option(value="Откидное") Откидное
+                                option(value="Поворотно-откидное") Поворотно-откидное
 
                 ul.ind-constructor__block-list#indexConstructorList
-                    li.ind-constructor__block-list-items
+                    li.ind-constructor__block-list-items#indexConstructorListElement_1(onclick='checkedPositionClient(this)')
                         .ind-constructor__block-list-items-count
                         .ind-constructor__block-list-items-type 
                             .ind-constructor__block-list-items-type-icons 
@@ -355,7 +361,7 @@
                                 .ind-constructor__block-list-items-type-text-title Створка
                                 .ind-constructor__block-list-items-type-text-size 1600*1469 мм
                         .ind-constructor__block-list-items-text#indexConstructorListText_1 Одностворчатое окно (Глухое), Даухкамерный стеклопакет, Алюминий, Кирпичный  
-                        .ind-constructor__block-list-items-basket.display-n#indexConstructorBasketListButton
+                        button.ind-constructor__block-list-items-basket.display-n#indexConstructorBasketListButton_1(value="indexConstructorListElement_1" onclick="indexConstructorRemoveElement(this)")
                             <svg xmlns="http://www.w3.org/2000/svg" width="18.952" height="23.204" viewBox="0 0 18.952 23.204">
                                 <g id="trash" transform="translate(0 0)">
                                     <path id="Path_613" data-name="Path 613" d="M18.893,5.186,18.38,3.65a1.429,1.429,0,0,0-1.357-.978H12.717v-1.4A1.272,1.272,0,0,0,11.447,0H7.5a1.272,1.272,0,0,0-1.27,1.271v1.4H1.928A1.429,1.429,0,0,0,.571,3.65L.058,5.186A1.15,1.15,0,0,0,1.149,6.7h.536L2.863,21.275A2.109,2.109,0,0,0,4.953,23.2h9.285a2.109,2.109,0,0,0,2.09-1.929L17.506,6.7h.3a1.15,1.15,0,0,0,1.091-1.513ZM7.593,1.359h3.764V2.672H7.593Zm7.378,19.806a.741.741,0,0,1-.734.679H4.953a.741.741,0,0,1-.734-.679L3.049,6.7H16.142ZM1.441,5.34l.42-1.259a.071.071,0,0,1,.067-.049h15.1a.071.071,0,0,1,.067.049l.42,1.259Zm0,0" transform="translate(0)" fill="#286CF0"/>

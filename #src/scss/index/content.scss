@@ -1083,6 +1083,10 @@
                     bottom: -115px;
                     left: -77px;
                     cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
                 }
             }
         }
@@ -1267,8 +1271,8 @@
 
 
 
-.leaf-select-item {
-    width: 657px;
+.leaf-1-select-item {
+    width: 100%;
     height: 45px;
     border: 1px solid #FFFFFF;
     display: flex;
@@ -1292,7 +1296,7 @@
         height: 27px;
     }
 }
-.leaf-select-wrapper {
+.leaf-1-select-wrapper {
     position: absolute;
     bottom: -140px;
     left: -1px;
@@ -1308,21 +1312,21 @@
     overflow-x: hidden;
     padding: 20px 0 20px 20px;
 }
-.leaf-select-wrapper::-webkit-scrollbar {
+.leaf-1-select-wrapper::-webkit-scrollbar {
     width: 27px;
 }
-.leaf-select-wrapper::-webkit-scrollbar-track {
+.leaf-1-select-wrapper::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 10px 10px #854FC8;
             box-shadow: inset 0 0 10px 10px #854FC8;
     border: solid 12px transparent;
     margin: 0 10px 0 0;
 }
-.leaf-select-wrapper::-webkit-scrollbar-thumb {
+.leaf-1-select-wrapper::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 10px 10px #fff;
             box-shadow: inset 0 0 10px 10px #fff;
     border: solid 10px transparent;
 }
-.leaf-select-element {
+.leaf-1-select-element {
     width: 210px;
     height: 20px;
     background: transparent;
@@ -1332,7 +1336,84 @@
     text-align: left;
     cursor: pointer;
 }
-.leaf-select-placeholder {
+.leaf-1-select-placeholder {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #EFEFEF;
+}
+
+
+
+
+.leaf-2-select-item {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 0 20px;
+    position: relative;
+    cursor: pointer;
+    &-active {
+        &::after {
+            transform: rotate(180deg);
+            transition: all 0.5s ease;
+        }
+    }
+    &::after {
+        content: url(../svg/index/arrow-down.svg);
+        position: absolute;
+        top: 8px;
+        right: 25px;
+        transition: all 0.5s ease;
+        height: 27px;
+    }
+}
+.leaf-2-select-wrapper {
+    position: absolute;
+    bottom: -140px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: 140px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: auto;
+    background: #286cf0;
+    overflow-x: hidden;
+    padding: 20px 0 20px 20px;
+}
+.leaf-2-select-wrapper::-webkit-scrollbar {
+    width: 27px;
+}
+.leaf-2-select-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px 10px #854FC8;
+            box-shadow: inset 0 0 10px 10px #854FC8;
+    border: solid 12px transparent;
+    margin: 0 10px 0 0;
+}
+.leaf-2-select-wrapper::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 10px 10px #fff;
+            box-shadow: inset 0 0 10px 10px #fff;
+    border: solid 10px transparent;
+}
+.leaf-2-select-element {
+    width: 210px;
+    height: 20px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    margin: 0 0 5px 0;
+    text-align: left;
+    cursor: pointer;
+}
+.leaf-2-select-placeholder {
     font-family: TT Norms;
     font-style: normal;
     font-weight: normal;

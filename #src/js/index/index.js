@@ -1,18 +1,21 @@
 let constructor = {
     1: {
         id: 1,
-        leaf_1: 'Глухое'
+        leaf_1: 'Глухое',
+        leaf_2: 'Глухое'
     },
-    2: {
-        id: 2,
-        leaf_1: 'Глухое'
-    }
+    // 2: {
+    //     id: 2,
+    //     leaf_1: 'Глухое'
+    // }
 }
 
 let ids = 1
+let typeWindows = 1
 
 let positionClient = 1
 let leafs_1 = "Глухое"
+let leafs_2 = "Глухое"
 
 // $('.ind-constructor').on('click', function() {
 //     id = id + 1
@@ -26,31 +29,74 @@ let leafs_1 = "Глухое"
 
 function Leaf_1() {
     setTimeout(() => {
-        let leafs = $('.leaf-select-placeholder').html()
-        checkDataInfoObject(positionClient, leafs)
+        leafs_1 = $('#indexConstructorSelectLeaf_1').html()
+        leafs_2 = $('#indexConstructorSelectLeaf_2').html()
+        checkDataInfoObject(positionClient, leafs_1, leafs_2)
+    }, 0);
+}
+function Leaf_2() {
+    setTimeout(() => {
+        leafs_1 = $('#indexConstructorSelectLeaf_1').html()
+        leafs_2 = $('#indexConstructorSelectLeaf_2').html()
+        checkDataInfoObject(positionClient, leafs_1, leafs_2)
     }, 0);
 }
 
-function checkDataInfoObject(ps, f_1) {
-    console.log(ps, f_1)
+
+function checkedPositionClient(element) {
+    let pos = element.id
+    positionClient = pos.toString().slice(-1);
+    console.log(positionClient)
+}
+
+function checkDataInfoObject(ps, f_1, f_2) {
+    console.log(ps, f_1, f_2)
     constructor[ps]['leaf_1'] = f_1
-    console.log(constructor[ps])
-    $(`#indexConstructorListText_${ps}`).html(`${f_1}`)
+    constructor[ps]['leaf_2'] = f_2
+    if (typeWindows == 1) {
+        $(`#indexConstructorListText_${ps}`).html(`Одностворчатое окно (${f_1}), Даухкамерный стеклопакет, Алюминий, Кирпичный`)
+    }
+    if (typeWindows == 2) {
+        $(`#indexConstructorListText_${ps}`).html(`Двухстворчатое окно (${f_1}, ${f_2}), Даухкамерный стеклопакет, Алюминий, Кирпичный`)
+    }
 }
 
 console.log(constructor)
 
+function clearInfoList() {
+    if ( typeWindows == 1) {
+        $(`#indexConstructorListText_${positionClient}`).html(`Одностворчатое окно (Глухой), Даухкамерный стеклопакет, Алюминий, Кирпичный`)
+    }
+    if ( typeWindows == 2) {
+        $(`#indexConstructorListText_${positionClient}`).html(`Двухстворчатое окно (Глухой, Глухой), Даухкамерный стеклопакет, Алюминий, Кирпичный`)
+    }
+}
+
 
 $('#indexConstructorButtonAdd').on('click', function() {
     idElementListConstructor()
-    let apple = {
+    constructor[ids] = {
         id: ids,
-        name: 'Apple'
-    }
-    constructor[ids] = apple 
+        leaf_1: "Глухое"
+    } 
     console.log(constructor)
 
+    positionClient++
 
+    $('#indexConstructorWindowTabsElement-1').addClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-2').removeClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-3').removeClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-4').removeClass('ind-constructor__block-window-tabs-items-active')
+
+    typeWindows = 1
+    clearInfoList()
+    $('#leaf-2').addClass('display-n')
+    $('.leaf-2-select-item').addClass('display-n')
+
+    $('#indexConstructorSelectLeaf_1').html('Глухой')
+    $('#indexConstructorSelectLeaf_2').html('Глухой')
+    Leaf_1()
+    Leaf_2()
 
 
     let newElement = document.createElement("li");
@@ -69,7 +115,7 @@ $('#indexConstructorButtonAdd').on('click', function() {
                     <div class="ind-constructor__block-list-items-type-text-size">1600*1469 мм</div>
                 </div>
             </div>
-            <div class="ind-constructor__block-list-items-text">Одностворчатое окно (Глухое), Даухкамерный стеклопакет, Алюминий, Кирпичный  </div>
+            <div class="ind-constructor__block-list-items-text" id="indexConstructorListText_${ids}">Одностворчатое окно (Глухое), Даухкамерный стеклопакет, Алюминий, Кирпичный  </div>
             <button class="ind-constructor__block-list-items-basket" id="indexConstructorBasketListButton_${ids}" value="indexConstructorListElement_${ids}" onclick="indexConstructorRemoveElement(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18.952" height="23.204" viewBox="0 0 18.952 23.204">
                     <g id="trash" transform="translate(0 0)">
@@ -88,6 +134,10 @@ $('#indexConstructorButtonAdd').on('click', function() {
             </div>
         `
         document.getElementById("indexConstructorList").appendChild(newElement);
+        $(`#indexConstructorListElement_${ids}`).attr('onclick', 'checkedPositionClient(this)')
+        // if(typeWindows == 1) {
+        //     $(`#indexConstructorListText_${ids}`).html(`Одностворчатое окно (Глухое), Даухкамерный стеклопакет, Алюминий, Кирпичный`)
+        // }
 });
 
 
@@ -96,15 +146,21 @@ function indexConstructorRemoveElement(element) {
     console.log(idElement)
     let valueElement = $(`#${idElement}`).val()
     $(`#${valueElement}`).remove()
+
+    setTimeout(function() {
+        $(`#${$("#indexConstructorList li")[0].id}`).click()
+        console.log(312312312312)
+    }, 100)
+
 }
 
 
 function idElementListConstructor() {
-    ids = ids + 1
+    ids++
     if (ids == 1) {
-        $('#indexConstructorBasketListButton').addClass('display-n')
+        $('#indexConstructorBasketListButton_1').addClass('display-n')
     } else if (ids == 2) {
-        $('#indexConstructorBasketListButton').removeClass('display-n')
+        $('#indexConstructorBasketListButton_1').removeClass('display-n')
     }
 }
 
@@ -133,55 +189,109 @@ $('#indexConstructorWindowTabsElement-1').on('click', function() {
     $('#indexConstructorWindowTabsElement-2').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-3').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-4').removeClass('ind-constructor__block-window-tabs-items-active')
+    typeWindows = 1
+    $('#leaf-2').addClass('display-n')
+    $('.leaf-2-select-item').addClass('display-n')
+
+    $('#indexConstructorSelectLeaf_1').html('Глухой')
+    $('#indexConstructorSelectLeaf_2').html('Глухой')
+    Leaf_1()
+    Leaf_2()
+    clearInfoList()
 });
 $('#indexConstructorWindowTabsElement-2').on('click', function() {
     $(this).addClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-1').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-3').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-4').removeClass('ind-constructor__block-window-tabs-items-active')
+    typeWindows = 2
+    $('#leaf-2').removeClass('display-n')
+    $('.leaf-2-select-item').removeClass('display-n')
+    
+    $('#indexConstructorSelectLeaf_1').html('Глухой')
+    $('#indexConstructorSelectLeaf_2').html('Глухой')
+    Leaf_1()
+    Leaf_2()
+    clearInfoList()
 });
 $('#indexConstructorWindowTabsElement-3').on('click', function() {
     $(this).addClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-2').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-1').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-4').removeClass('ind-constructor__block-window-tabs-items-active')
+    typeWindows = 3
 });
 $('#indexConstructorWindowTabsElement-4').on('click', function() {
     $(this).addClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-2').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-3').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-1').removeClass('ind-constructor__block-window-tabs-items-active')
+    typeWindows = 4
 });
+
+
 
 
 
 $(function() {
     $('#leaf-1').css('display', 'none')
-    $('#leaf-1').after('<div class="leaf-select-item"><div class="leaf-select-placeholder">Глухое</div><div id="leafSelectElement" class="leaf-select-wrapper display-n"></div></div>')
+    $('#leaf-1').after('<div class="leaf-1-select-item"><div class="leaf-1-select-placeholder" id="indexConstructorSelectLeaf_1">Глухое</div><div id="leafSelectElement_1" class="leaf-1-select-wrapper display-n"></div></div>')
     let count = $('#leaf-1').children('option').length
     for( let i = 0; i < count; i++) {
         let arrows = $('#leaf-1').children('option').eq(i).val()
         let newElementBlock = document.createElement("button");
-        newElementBlock.classList.add("leaf-select-element")
-        newElementBlock.id = `leaf-select-element-${i}`;
+        newElementBlock.classList.add("leaf-1-select-element")
+        newElementBlock.id = `leaf-1-select-element-${i}`;
         newElementBlock.innerHTML = `${arrows}`
-        document.getElementById("leafSelectElement").appendChild(newElementBlock);
-        $(`#leaf-select-element-${i}`).attr('value', `${arrows}`)
-        $(`#leaf-select-element-${i}`).attr('onclick', 'Leaf_1()')
+        document.getElementById("leafSelectElement_1").appendChild(newElementBlock);
+        $(`#leaf-1-select-element-${i}`).attr('value', `${arrows}`)
+        $(`#leaf-1-select-element-${i}`).attr('onclick', 'Leaf_1()')
     }
-    $('#leaf-select-element-0').css('display', 'none')
-    $('.leaf-select-item').on('click', function() {
-        $('.leaf-select-wrapper').toggleClass('display-n')
-        $(this).toggleClass('leaf-select-item-active')
+    $('#leaf-1-select-element-0').css('display', 'none')
+    $('.leaf-1-select-item').on('click', function() {
+        $('.leaf-1-select-wrapper').toggleClass('display-n')
+        $(this).toggleClass('leaf-1-select-item-active')
         
     })
-    $(".leaf-select-element").on('click', function() {
+    $(".leaf-1-select-element").on('click', function() {
         let idElement = this.id
         let valueElement = $(`#${idElement}`).val()
-        $('.leaf-select-placeholder').html(valueElement)
+        $('.leaf-1-select-placeholder').html(valueElement)
         $('#leaf-1 option:nth-child(1)').val(valueElement)
         $('#leaf-1 option:nth-child(1)').html(valueElement)
     })
 })
+
+
+$(function() {
+    $('#leaf-2').css('display', 'none')
+    $('#leaf-2').after('<div class="leaf-2-select-item display-n"><div class="leaf-2-select-placeholder" id="indexConstructorSelectLeaf_2">Глухое</div><div id="leafSelectElement_2" class="leaf-2-select-wrapper display-n"></div></div>')
+    let count = $('#leaf-2').children('option').length
+    for( let i = 0; i < count; i++) {
+        let arrows = $('#leaf-2').children('option').eq(i).val()
+        let newElementBlock = document.createElement("button");
+        newElementBlock.classList.add("leaf-2-select-element")
+        newElementBlock.id = `leaf-2-select-element-${i}`;
+        newElementBlock.innerHTML = `${arrows}`
+        document.getElementById("leafSelectElement_2").appendChild(newElementBlock);
+        $(`#leaf-2-select-element-${i}`).attr('value', `${arrows}`)
+        $(`#leaf-2-select-element-${i}`).attr('onclick', 'Leaf_2()')
+    }
+    $('#leaf-2-select-element-0').css('display', 'none')
+    $('.leaf-2-select-item').on('click', function() {
+        $('.leaf-2-select-wrapper').toggleClass('display-n')
+        $(this).toggleClass('leaf-2-select-item-active')
+        
+    })
+    $(".leaf-2-select-element").on('click', function() {
+        let idElement = this.id
+        let valueElement = $(`#${idElement}`).val()
+        $('.leaf-2-select-placeholder').html(valueElement)
+        $('#leaf-2 option:nth-child(1)').val(valueElement)
+        $('#leaf-2 option:nth-child(1)').html(valueElement)
+    })
+})
+
+
 
 

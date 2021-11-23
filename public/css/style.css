@@ -1858,6 +1858,16 @@
   bottom: -115px;
   left: -77px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
 .ind-constructor__block-list {
@@ -2122,8 +2132,8 @@
   color: #000;
 }
 
-.leaf-select-item {
-  width: 657px;
+.leaf-1-select-item {
+  width: 100%;
   height: 45px;
   border: 1px solid #fff;
   display: -webkit-box;
@@ -2140,7 +2150,7 @@
   cursor: pointer;
 }
 
-.leaf-select-item-active::after {
+.leaf-1-select-item-active::after {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -2149,7 +2159,7 @@
   transition: all .5s ease;
 }
 
-.leaf-select-item::after {
+.leaf-1-select-item::after {
   content: url(../svg/index/arrow-down.svg);
   position: absolute;
   top: 8px;
@@ -2160,7 +2170,7 @@
   height: 27px;
 }
 
-.leaf-select-wrapper {
+.leaf-1-select-wrapper {
   position: absolute;
   bottom: -140px;
   left: -1px;
@@ -2186,24 +2196,24 @@
   padding: 20px 0 20px 20px;
 }
 
-.leaf-select-wrapper::-webkit-scrollbar {
+.leaf-1-select-wrapper::-webkit-scrollbar {
   width: 27px;
 }
 
-.leaf-select-wrapper::-webkit-scrollbar-track {
+.leaf-1-select-wrapper::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 10px 10px #854fc8;
   box-shadow: inset 0 0 10px 10px #854fc8;
   border: solid 12px transparent;
   margin: 0 10px 0 0;
 }
 
-.leaf-select-wrapper::-webkit-scrollbar-thumb {
+.leaf-1-select-wrapper::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 10px 10px #fff;
   box-shadow: inset 0 0 10px 10px #fff;
   border: solid 10px transparent;
 }
 
-.leaf-select-element {
+.leaf-1-select-element {
   width: 210px;
   height: 20px;
   background: transparent;
@@ -2214,7 +2224,108 @@
   cursor: pointer;
 }
 
-.leaf-select-placeholder {
+.leaf-1-select-placeholder {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #efefef;
+}
+
+.leaf-2-select-item {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0 0 0 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.leaf-2-select-item-active::after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.leaf-2-select-item::after {
+  content: url(../svg/index/arrow-down.svg);
+  position: absolute;
+  top: 8px;
+  right: 25px;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  height: 27px;
+}
+
+.leaf-2-select-wrapper {
+  position: absolute;
+  bottom: -140px;
+  left: -1px;
+  width: calc(100% + 2px);
+  height: 140px;
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow: auto;
+  background: #286cf0;
+  overflow-x: hidden;
+  padding: 20px 0 20px 20px;
+}
+
+.leaf-2-select-wrapper::-webkit-scrollbar {
+  width: 27px;
+}
+
+.leaf-2-select-wrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 10px 10px #854fc8;
+  box-shadow: inset 0 0 10px 10px #854fc8;
+  border: solid 12px transparent;
+  margin: 0 10px 0 0;
+}
+
+.leaf-2-select-wrapper::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 10px 10px #fff;
+  box-shadow: inset 0 0 10px 10px #fff;
+  border: solid 10px transparent;
+}
+
+.leaf-2-select-element {
+  width: 210px;
+  height: 20px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  margin: 0 0 5px 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.leaf-2-select-placeholder {
   font-family: TT Norms;
   font-style: normal;
   font-weight: normal;
