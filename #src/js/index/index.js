@@ -10,6 +10,8 @@ let constructor = {
     // }
 }
 
+$('#indexConstructorListElement_1').css('background', 'gray')
+
 let ids = 1
 let typeWindows = 1
 
@@ -45,8 +47,119 @@ function Leaf_2() {
 
 function checkedPositionClient(element) {
     let pos = element.id
-    positionClient = pos.toString().slice(-1);
+    if (pos.length == 29) {
+        positionClient = pos.toString().slice(-1);
+    } else if (pos.length == 30) {
+        positionClient = pos.toString().slice(-2);
+    } else if (pos.length == 31) {
+        positionClient = pos.toString().slice(-3);
+    } else if (pos.length == 32) {
+        positionClient = pos.toString().slice(-4);
+    }
     console.log(positionClient)
+
+    $('.ind-constructor__block-list-items').css('background', '#fff')
+    $(`#indexConstructorListElement_${positionClient}`).css('background', 'gray')
+}
+let countCopy = -1
+let countCopyElement = 1000
+function copyElementList(element) {
+    let idElement = element.id
+    let valueElement = document.getElementById(`${idElement}`).value
+    let numberElement
+    if (valueElement.length == 29) {
+        numberElement = Number(valueElement.toString().slice(-1));
+    } else if (valueElement.length == 30) {
+        numberElement = Number(valueElement.toString().slice(-2));
+    } else if (valueElement.length == 31) {
+        numberElement = Number(valueElement.toString().slice(-3));
+    } else if (valueElement.length == 32) {
+        numberElement = Number(valueElement.toString().slice(-4));
+    }
+    // let numberElement = (Number(valueElement.toString().slice(-1)))
+    let newObj = {}
+    newObj = constructor[numberElement]
+    constructor[numberElement + 1000 + countCopy] = {
+        id: numberElement + 1000 + countCopy,
+        leaf_1: newObj['leaf_1'],
+        leaf_2: newObj['leaf_2']
+    } 
+
+
+
+    console.log(constructor)
+
+    newObj = {}
+
+    positionClient++
+
+    $('#indexConstructorWindowTabsElement-1').addClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-2').removeClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-3').removeClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-4').removeClass('ind-constructor__block-window-tabs-items-active')
+
+    // typeWindows = 1
+    // clearInfoList()
+    // $('#leaf-2').addClass('display-n')
+    // $('.leaf-2-select-item').addClass('display-n')
+
+    // $('#indexConstructorSelectLeaf_1').html('Глухой')
+    // $('#indexConstructorSelectLeaf_2').html('Глухой')
+    // Leaf_1()
+    // Leaf_2()
+
+
+    let newElement = document.createElement("li");
+        newElement.classList.add("ind-constructor__block-list-items")
+        newElement.id = `indexConstructorListElement_${numberElement + 1000 + countCopy}`;
+        newElement.innerHTML = `
+        <div class="ind-constructor__block-list-items-count"></div>
+            <div class="ind-constructor__block-list-items-type"> 
+                <div class="ind-constructor__block-list-items-type-icons">
+                    <svg width="24" height="33" viewBox="0 0 24 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1" width="22" height="31" stroke="#286CF0" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="ind-constructor__block-list-items-type-text"> 
+                    <div class="ind-constructor__block-list-items-type-text-title">Створка</div>
+                    <div class="ind-constructor__block-list-items-type-text-size">1600*1469 мм</div>
+                </div>
+            </div>
+            <div class="ind-constructor__block-list-items-text" id="indexConstructorListText_${numberElement + 1000 + countCopy}">Одностворчатое окно (Глухое), Даухкамерный стеклопакет, Алюминий, Кирпичный  </div>
+            <button class="ind-constructor__block-list-items-basket" id="indexConstructorBasketListButton_${numberElement + 1000 + countCopy}" value="indexConstructorListElement_${numberElement + 1000 + countCopy}" onclick="indexConstructorRemoveElement(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18.952" height="23.204" viewBox="0 0 18.952 23.204">
+                    <g id="trash" transform="translate(0 0)">
+                        <path id="Path_613" data-name="Path 613" d="M18.893,5.186,18.38,3.65a1.429,1.429,0,0,0-1.357-.978H12.717v-1.4A1.272,1.272,0,0,0,11.447,0H7.5a1.272,1.272,0,0,0-1.27,1.271v1.4H1.928A1.429,1.429,0,0,0,.571,3.65L.058,5.186A1.15,1.15,0,0,0,1.149,6.7h.536L2.863,21.275A2.109,2.109,0,0,0,4.953,23.2h9.285a2.109,2.109,0,0,0,2.09-1.929L17.506,6.7h.3a1.15,1.15,0,0,0,1.091-1.513ZM7.593,1.359h3.764V2.672H7.593Zm7.378,19.806a.741.741,0,0,1-.734.679H4.953a.741.741,0,0,1-.734-.679L3.049,6.7H16.142ZM1.441,5.34l.42-1.259a.071.071,0,0,1,.067-.049h15.1a.071.071,0,0,1,.067.049l.42,1.259Zm0,0" transform="translate(0)" fill="#286CF0"/>
+                        <path id="Path_614" data-name="Path 614" d="M268.941,179.19h.036a.68.68,0,0,0,.678-.644l.638-12.255a.68.68,0,1,0-1.358-.071l-.638,12.255A.68.68,0,0,0,268.941,179.19Zm0,0" transform="translate(-256.137 -158.073)" fill="#286CF0"/>
+                        <path id="Path_615" data-name="Path 615" d="M106.463,178.551a.68.68,0,0,0,.678.643h.038a.68.68,0,0,0,.642-.716l-.669-12.255a.68.68,0,0,0-1.358.074Zm0,0" transform="translate(-100.999 -158.075)" fill="#286CF0"/>
+                        <path id="Path_616" data-name="Path 616" d="M194.934,179.193a.68.68,0,0,0,.68-.68V166.259a.68.68,0,0,0-1.36,0v12.255A.68.68,0,0,0,194.934,179.193Zm0,0" transform="translate(-185.451 -158.075)" fill="#286CF0"/>
+                    </g>
+                </svg>
+            </button>
+            <button class="ind-constructor__block-list-items-copy" id="indexConstructorCopyItems_${numberElement + 1000 + countCopy}" value="indexConstructorListElement_${numberElement + 1000 + countCopy}" onclick="copyElementList(this)">
+                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="3.5" width="14" height="16" rx="2.5" stroke="#286CF0"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 14V3C18 1.34315 16.6569 0 15 0H6V1H15C16.1046 1 17 1.89543 17 3V14H18Z" fill="#286CF0"/>
+                </svg>
+            </button>
+        `
+        document.getElementById("indexConstructorList").appendChild(newElement);
+        $(`#indexConstructorListElement_${numberElement + 1000 + countCopy}`).attr('onclick', 'checkedPositionClient(this)')
+
+
+        setTimeout(function() {
+            $(`#indexConstructorListElement_${numberElement + countCopyElement + countCopy}`).click()
+        }, 1)
+
+        // $('.ind-constructor__block-list-items').css('background', '#fff')
+        // $(`#indexConstructorListElement_${numberElement + 1000 + countCopy}`).css('background', 'gray')
+
+        countCopyElement = countCopyElement + countCopyElement
+
+        checkDataInfoObject(numberElement + 1000 + countCopy, constructor[numberElement + 1000 + countCopy]['leaf_1'], constructor[numberElement + 1000 + countCopy]['leaf_2'])
+        countCopy++
+        checkedCountItems()
+
 }
 
 function checkDataInfoObject(ps, f_1, f_2) {
@@ -126,18 +239,26 @@ $('#indexConstructorButtonAdd').on('click', function() {
                     </g>
                 </svg>
             </button>
-            <div class="ind-constructor__block-list-items-copy">
+            <button class="ind-constructor__block-list-items-copy" id="indexConstructorCopyItems_${ids}" value="indexConstructorListElement_${ids}" onclick="copyElementList(this)">
                 <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="3.5" width="14" height="16" rx="2.5" stroke="#286CF0"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M18 14V3C18 1.34315 16.6569 0 15 0H6V1H15C16.1046 1 17 1.89543 17 3V14H18Z" fill="#286CF0"/>
                 </svg>
-            </div>
+            </button>
         `
         document.getElementById("indexConstructorList").appendChild(newElement);
         $(`#indexConstructorListElement_${ids}`).attr('onclick', 'checkedPositionClient(this)')
         // if(typeWindows == 1) {
         //     $(`#indexConstructorListText_${ids}`).html(`Одностворчатое окно (Глухое), Даухкамерный стеклопакет, Алюминий, Кирпичный`)
         // }
+
+        $('.ind-constructor__block-list-items').css('background', '#fff')
+        $(`#indexConstructorListElement_${ids}`).css('background', 'gray')
+
+        setTimeout(function() {
+            $(`#indexConstructorListElement_${ids}`).click()
+        }, 0)
+        checkedCountItems()
 });
 
 
@@ -149,20 +270,31 @@ function indexConstructorRemoveElement(element) {
 
     setTimeout(function() {
         $(`#${$("#indexConstructorList li")[0].id}`).click()
-        console.log(312312312312)
+        console.log($("#indexConstructorList li")[0].id + 'fff')
     }, 100)
-
+    checkedCountItems()
 }
 
 
 function idElementListConstructor() {
     ids++
-    if (ids == 1) {
-        $('#indexConstructorBasketListButton_1').addClass('display-n')
-    } else if (ids == 2) {
-        $('#indexConstructorBasketListButton_1').removeClass('display-n')
+    // if (ids == 1) {
+    //     $('#indexConstructorBasketListButton_1').addClass('display-n')
+    // } else if (ids == 2) {
+    //     $('#indexConstructorBasketListButton_1').removeClass('display-n')
+    // }
+}
+
+function checkedCountItems() {
+    let countList = document.getElementById('indexConstructorList').getElementsByTagName('li').length
+    if ( countList == 1) {
+        $(".ind-constructor__block-list-items-basket").attr('disabled', 'disabled')
+    } else {
+        $(".ind-constructor__block-list-items-basket").removeAttr('disabled')
+        $('#indexConstructorListElement_1').removeAttr('disabled')
     }
 }
+checkedCountItems()
 
 
 
