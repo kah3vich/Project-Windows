@@ -60,6 +60,29 @@ function checkedPositionClient(element) {
 
     $('.ind-constructor__block-list-items').css('background', '#fff')
     $(`#indexConstructorListElement_${positionClient}`).css('background', 'gray')
+
+    let checkedTypeWindows = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[0]
+    // console.log($(`#indexConstructorListText_${positionClient}`).html().split(' ')[2])
+    if ( checkedTypeWindows == 'Одностворчатое' ) {
+        setTimeout(function() {
+            $('#indexConstructorWindowTabsElement-1').click()
+        }, 0)
+    } else if ( checkedTypeWindows == 'Двухстворчатое' ) {
+        setTimeout(function() {
+            $('#indexConstructorWindowTabsElement-2').click()
+        }, 0)
+    }
+
+    let checkedTypeWindowsCount_1 = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[2]
+    // if ( checkedTypeWindowsCount_1 == 'Глухой' ) {
+    //     $('#checkedTypeWindowsCount_1').html('Глухой')
+    // } else if ( checkedTypeWindowsCount_1 == 'Поворотное' ) {
+    //     $('#checkedTypeWindowsCount_1').html('Поворотное')
+    // } else if ( checkedTypeWindowsCount_1 == 'Откидное' ) {
+    //     $('#checkedTypeWindowsCount_1').html('Откидное')
+    // } else if ( checkedTypeWindowsCount_1 == 'Поворотно-откидное' ) {
+    //     $('#checkedTypeWindowsCount_1').html('Поворотно-откидное')
+    // }
 }
 let countCopy = -1
 let countCopyElement = 1000
