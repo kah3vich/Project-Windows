@@ -61,17 +61,17 @@ function checkedPositionClient(element) {
     $('.ind-constructor__block-list-items').css('background', '#fff')
     $(`#indexConstructorListElement_${positionClient}`).css('background', 'gray')
 
-    let checkedTypeWindows = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[0]
-    // console.log($(`#indexConstructorListText_${positionClient}`).html().split(' ')[2])
-    if ( checkedTypeWindows == 'Одностворчатое' ) {
-        setTimeout(function() {
-            $('#indexConstructorWindowTabsElement-1').click()
-        }, 0)
-    } else if ( checkedTypeWindows == 'Двухстворчатое' ) {
-        setTimeout(function() {
-            $('#indexConstructorWindowTabsElement-2').click()
-        }, 0)
-    }
+    // let checkedTypeWindows = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[0]
+    // // console.log($(`#indexConstructorListText_${positionClient}`).html().split(' ')[2])
+    // if ( checkedTypeWindows == 'Одностворчатое' ) {
+    //     setTimeout(function() {
+    //         $('#indexConstructorWindowTabsElement-1').click()
+    //     }, 0)
+    // } else if ( checkedTypeWindows == 'Двухстворчатое' ) {
+    //     setTimeout(function() {
+    //         $('#indexConstructorWindowTabsElement-2').click()
+    //     }, 0)
+    // }
 
     let checkedTypeWindowsCount_1 = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[2]
     // if ( checkedTypeWindowsCount_1 == 'Глухой' ) {
