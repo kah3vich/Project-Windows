@@ -71,8 +71,8 @@ function checkedPositionClient(element) {
         $('#leaf-2').addClass('display-n')
         $('.leaf-2-select-item').addClass('display-n')
         let checkedTypeWindowsCount_1 = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[2]
-        if ( checkedTypeWindowsCount_1 == '(Глухой),') {
-            $('#indexConstructorSelectLeaf_1').html('Глухой')
+        if ( checkedTypeWindowsCount_1 == '(Глухое),') {
+            $('#indexConstructorSelectLeaf_1').html('Глухое')
         } else if ( checkedTypeWindowsCount_1 == '(Поворотное),') {
             $('#indexConstructorSelectLeaf_1').html('Поворотное')
         } else if ( checkedTypeWindowsCount_1 == '(Откидное),') {
@@ -81,8 +81,8 @@ function checkedPositionClient(element) {
             $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
         }
 
-        // $('#indexConstructorSelectLeaf_1').html('Глухой')
-        // $('#indexConstructorSelectLeaf_2').html('Глухой')
+        // $('#indexConstructorSelectLeaf_1').html('Глухое')
+        // $('#indexConstructorSelectLeaf_2').html('Глухое')
     } else if ( checkedTypeWindows == 'Двухстворчатое' ) {
         $('#indexConstructorWindowTabsElement-2').addClass('ind-constructor__block-window-tabs-items-active')
         $('#indexConstructorWindowTabsElement-1').removeClass('ind-constructor__block-window-tabs-items-active')
@@ -92,23 +92,23 @@ function checkedPositionClient(element) {
         $('.leaf-2-select-item').removeClass('display-n')
         let checkedTypeWindowsCount_2_1 = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[2]
         let checkedTypeWindowsCount_2_2 = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[3]
-        if ( checkedTypeWindowsCount_2_1 == '(Глухой,' && checkedTypeWindowsCount_2_2 == 'Глухой),' ) {
-            $('#indexConstructorSelectLeaf_1').html('Глухой')
-            $('#indexConstructorSelectLeaf_2').html('Глухой')
-        } else if ( checkedTypeWindowsCount_2_1 == '(Глухой,' && checkedTypeWindowsCount_2_2 == 'Поворотное),' ) {
-            $('#indexConstructorSelectLeaf_1').html('Глухой')
+        if ( checkedTypeWindowsCount_2_1 == '(Глухое,' && checkedTypeWindowsCount_2_2 == 'Глухое),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Глухое')
+            $('#indexConstructorSelectLeaf_2').html('Глухое')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Глухое,' && checkedTypeWindowsCount_2_2 == 'Поворотное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Глухое')
             $('#indexConstructorSelectLeaf_2').html('Поворотное')
-        } else if ( checkedTypeWindowsCount_2_1 == '(Глухой,' && checkedTypeWindowsCount_2_2 == 'Откидное),' ) {
-            $('#indexConstructorSelectLeaf_1').html('Глухой')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Глухое,' && checkedTypeWindowsCount_2_2 == 'Откидное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Глухое')
             $('#indexConstructorSelectLeaf_2').html('Откидное')
-        } else if ( checkedTypeWindowsCount_2_1 == '(Глухой,' && checkedTypeWindowsCount_2_2 == 'Поворотно-откидное),' ) {
-            $('#indexConstructorSelectLeaf_1').html('Глухой')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Глухое,' && checkedTypeWindowsCount_2_2 == 'Поворотно-откидное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Глухое')
             $('#indexConstructorSelectLeaf_2').html('Поворотно-откидное')
         }
 
-        if ( checkedTypeWindowsCount_2_1 == '(Поворотное,' && checkedTypeWindowsCount_2_2 == 'Глухой),' ) {
+        if ( checkedTypeWindowsCount_2_1 == '(Поворотное,' && checkedTypeWindowsCount_2_2 == 'Глухое),' ) {
             $('#indexConstructorSelectLeaf_1').html('Поворотное')
-            $('#indexConstructorSelectLeaf_2').html('Глухой')
+            $('#indexConstructorSelectLeaf_2').html('Глухое')
         } else if ( checkedTypeWindowsCount_2_1 == '(Поворотное,' && checkedTypeWindowsCount_2_2 == 'Поворотное),' ) {
             $('#indexConstructorSelectLeaf_1').html('Поворотное')
             $('#indexConstructorSelectLeaf_2').html('Поворотное')
@@ -120,9 +120,9 @@ function checkedPositionClient(element) {
             $('#indexConstructorSelectLeaf_2').html('Поворотно-откидное')
         }
 
-        if ( checkedTypeWindowsCount_2_1 == '(Откидное,' && checkedTypeWindowsCount_2_2 == 'Глухой),' ) {
+        if ( checkedTypeWindowsCount_2_1 == '(Откидное,' && checkedTypeWindowsCount_2_2 == 'Глухое),' ) {
             $('#indexConstructorSelectLeaf_1').html('Откидное')
-            $('#indexConstructorSelectLeaf_2').html('Глухой')
+            $('#indexConstructorSelectLeaf_2').html('Глухое')
         } else if ( checkedTypeWindowsCount_2_1 == '(Откидное,' && checkedTypeWindowsCount_2_2 == 'Поворотное),' ) {
             $('#indexConstructorSelectLeaf_1').html('Откидное')
             $('#indexConstructorSelectLeaf_2').html('Поворотное')
@@ -134,9 +134,9 @@ function checkedPositionClient(element) {
             $('#indexConstructorSelectLeaf_2').html('Поворотно-откидное')
         }
 
-        if ( checkedTypeWindowsCount_2_1 == '(Поворотно-откидное,' && checkedTypeWindowsCount_2_2 == 'Глухой),' ) {
+        if ( checkedTypeWindowsCount_2_1 == '(Поворотно-откидное,' && checkedTypeWindowsCount_2_2 == 'Глухое),' ) {
             $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
-            $('#indexConstructorSelectLeaf_2').html('Глухой')
+            $('#indexConstructorSelectLeaf_2').html('Глухое')
         } else if ( checkedTypeWindowsCount_2_1 == '(Поворотно-откидное,' && checkedTypeWindowsCount_2_2 == 'Поворотное),' ) {
             $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
             $('#indexConstructorSelectLeaf_2').html('Поворотное')
@@ -147,8 +147,8 @@ function checkedPositionClient(element) {
             $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
             $('#indexConstructorSelectLeaf_2').html('Поворотно-откидное')
         }
-        // if ( checkedTypeWindowsCount_1 == '(Глухой),') {
-        //     $('#indexConstructorSelectLeaf_1').html('Глухой')
+        // if ( checkedTypeWindowsCount_1 == '(Глухое),') {
+        //     $('#indexConstructorSelectLeaf_1').html('Глухое')
         // } else if ( checkedTypeWindowsCount_1 == '(Поворотное),') {
         //     $('#indexConstructorSelectLeaf_1').html('Поворотное')
         // } else if ( checkedTypeWindowsCount_1 == '(Откидное),') {
@@ -157,12 +157,12 @@ function checkedPositionClient(element) {
         //     $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
         // }
 
-        // $('#indexConstructorSelectLeaf_1').html('Глухой')
-        // $('#indexConstructorSelectLeaf_2').html('Глухой')
+        // $('#indexConstructorSelectLeaf_1').html('Глухое')
+        // $('#indexConstructorSelectLeaf_2').html('Глухое')
     }
 
-    // if ( checkedTypeWindowsCount_1 == 'Глухой' ) {
-    //     $('#checkedTypeWindowsCount_1').html('Глухой')
+    // if ( checkedTypeWindowsCount_1 == 'Глухое' ) {
+    //     $('#checkedTypeWindowsCount_1').html('Глухое')
     // } else if ( checkedTypeWindowsCount_1 == 'Поворотное' ) {
     //     $('#checkedTypeWindowsCount_1').html('Поворотное')
     // } else if ( checkedTypeWindowsCount_1 == 'Откидное' ) {
@@ -213,8 +213,8 @@ function copyElementList(element) {
     // $('#leaf-2').addClass('display-n')
     // $('.leaf-2-select-item').addClass('display-n')
 
-    // $('#indexConstructorSelectLeaf_1').html('Глухой')
-    // $('#indexConstructorSelectLeaf_2').html('Глухой')
+    // $('#indexConstructorSelectLeaf_1').html('Глухое')
+    // $('#indexConstructorSelectLeaf_2').html('Глухое')
     // Leaf_1()
     // Leaf_2()
 
@@ -288,10 +288,10 @@ console.log(constructor)
 
 function clearInfoList() {
     if ( typeWindows == 1) {
-        $(`#indexConstructorListText_${positionClient}`).html(`Одностворчатое окно (Глухой), Даухкамерный стеклопакет, Алюминий, Кирпичный`)
+        $(`#indexConstructorListText_${positionClient}`).html(`Одностворчатое окно (Глухое), Даухкамерный стеклопакет, Алюминий, Кирпичный`)
     }
     if ( typeWindows == 2) {
-        $(`#indexConstructorListText_${positionClient}`).html(`Двухстворчатое окно (Глухой, Глухой), Даухкамерный стеклопакет, Алюминий, Кирпичный`)
+        $(`#indexConstructorListText_${positionClient}`).html(`Двухстворчатое окно (Глухое, Глухое), Даухкамерный стеклопакет, Алюминий, Кирпичный`)
     }
 }
 
@@ -316,8 +316,8 @@ $('#indexConstructorButtonAdd').on('click', function() {
     $('#leaf-2').addClass('display-n')
     $('.leaf-2-select-item').addClass('display-n')
 
-    $('#indexConstructorSelectLeaf_1').html('Глухой')
-    $('#indexConstructorSelectLeaf_2').html('Глухой')
+    $('#indexConstructorSelectLeaf_1').html('Глухое')
+    $('#indexConstructorSelectLeaf_2').html('Глухое')
     Leaf_1()
     Leaf_2()
 
@@ -435,8 +435,8 @@ $('#indexConstructorWindowTabsElement-1').on('click', function() {
     $('#leaf-2').addClass('display-n')
     $('.leaf-2-select-item').addClass('display-n')
 
-    $('#indexConstructorSelectLeaf_1').html('Глухой')
-    $('#indexConstructorSelectLeaf_2').html('Глухой')
+    $('#indexConstructorSelectLeaf_1').html('Глухое')
+    $('#indexConstructorSelectLeaf_2').html('Глухое')
     Leaf_1()
     Leaf_2()
     clearInfoList()
@@ -450,8 +450,8 @@ $('#indexConstructorWindowTabsElement-2').on('click', function() {
     $('#leaf-2').removeClass('display-n')
     $('.leaf-2-select-item').removeClass('display-n')
     
-    $('#indexConstructorSelectLeaf_1').html('Глухой')
-    $('#indexConstructorSelectLeaf_2').html('Глухой')
+    $('#indexConstructorSelectLeaf_1').html('Глухое')
+    $('#indexConstructorSelectLeaf_2').html('Глухое')
     Leaf_1()
     Leaf_2()
     clearInfoList()
