@@ -61,19 +61,106 @@ function checkedPositionClient(element) {
     $('.ind-constructor__block-list-items').css('background', '#fff')
     $(`#indexConstructorListElement_${positionClient}`).css('background', 'gray')
 
-    // let checkedTypeWindows = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[0]
-    // // console.log($(`#indexConstructorListText_${positionClient}`).html().split(' ')[2])
-    // if ( checkedTypeWindows == 'Одностворчатое' ) {
-    //     setTimeout(function() {
-    //         $('#indexConstructorWindowTabsElement-1').click()
-    //     }, 0)
-    // } else if ( checkedTypeWindows == 'Двухстворчатое' ) {
-    //     setTimeout(function() {
-    //         $('#indexConstructorWindowTabsElement-2').click()
-    //     }, 0)
-    // }
+    let checkedTypeWindows = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[0]
+    // console.log($(`#indexConstructorListText_${positionClient}`).html().split(' ')[2])
+    if ( checkedTypeWindows == 'Одностворчатое' ) {
+        $('#indexConstructorWindowTabsElement-1').addClass('ind-constructor__block-window-tabs-items-active')
+        $('#indexConstructorWindowTabsElement-2').removeClass('ind-constructor__block-window-tabs-items-active')
+        $('#indexConstructorWindowTabsElement-3').removeClass('ind-constructor__block-window-tabs-items-active')
+        $('#indexConstructorWindowTabsElement-4').removeClass('ind-constructor__block-window-tabs-items-active')
+        $('#leaf-2').addClass('display-n')
+        $('.leaf-2-select-item').addClass('display-n')
+        let checkedTypeWindowsCount_1 = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[2]
+        if ( checkedTypeWindowsCount_1 == '(Глухой),') {
+            $('#indexConstructorSelectLeaf_1').html('Глухой')
+        } else if ( checkedTypeWindowsCount_1 == '(Поворотное),') {
+            $('#indexConstructorSelectLeaf_1').html('Поворотное')
+        } else if ( checkedTypeWindowsCount_1 == '(Откидное),') {
+            $('#indexConstructorSelectLeaf_1').html('Откидное')
+        } else if ( checkedTypeWindowsCount_1 == '(Поворотно-откидное),') {
+            $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
+        }
 
-    let checkedTypeWindowsCount_1 = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[2]
+        // $('#indexConstructorSelectLeaf_1').html('Глухой')
+        // $('#indexConstructorSelectLeaf_2').html('Глухой')
+    } else if ( checkedTypeWindows == 'Двухстворчатое' ) {
+        $('#indexConstructorWindowTabsElement-2').addClass('ind-constructor__block-window-tabs-items-active')
+        $('#indexConstructorWindowTabsElement-1').removeClass('ind-constructor__block-window-tabs-items-active')
+        $('#indexConstructorWindowTabsElement-3').removeClass('ind-constructor__block-window-tabs-items-active')
+        $('#indexConstructorWindowTabsElement-4').removeClass('ind-constructor__block-window-tabs-items-active')
+        $('#leaf-2').removeClass('display-n')
+        $('.leaf-2-select-item').removeClass('display-n')
+        let checkedTypeWindowsCount_2_1 = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[2]
+        let checkedTypeWindowsCount_2_2 = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[3]
+        if ( checkedTypeWindowsCount_2_1 == '(Глухой,' && checkedTypeWindowsCount_2_2 == 'Глухой),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Глухой')
+            $('#indexConstructorSelectLeaf_2').html('Глухой')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Глухой,' && checkedTypeWindowsCount_2_2 == 'Поворотное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Глухой')
+            $('#indexConstructorSelectLeaf_2').html('Поворотное')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Глухой,' && checkedTypeWindowsCount_2_2 == 'Откидное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Глухой')
+            $('#indexConstructorSelectLeaf_2').html('Откидное')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Глухой,' && checkedTypeWindowsCount_2_2 == 'Поворотно-откидное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Глухой')
+            $('#indexConstructorSelectLeaf_2').html('Поворотно-откидное')
+        }
+
+        if ( checkedTypeWindowsCount_2_1 == '(Поворотное,' && checkedTypeWindowsCount_2_2 == 'Глухой),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Поворотное')
+            $('#indexConstructorSelectLeaf_2').html('Глухой')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Поворотное,' && checkedTypeWindowsCount_2_2 == 'Поворотное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Поворотное')
+            $('#indexConstructorSelectLeaf_2').html('Поворотное')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Поворотное,' && checkedTypeWindowsCount_2_2 == 'Откидное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Поворотное')
+            $('#indexConstructorSelectLeaf_2').html('Откидное')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Поворотное,' && checkedTypeWindowsCount_2_2 == 'Поворотно-откидное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Поворотное')
+            $('#indexConstructorSelectLeaf_2').html('Поворотно-откидное')
+        }
+
+        if ( checkedTypeWindowsCount_2_1 == '(Откидное,' && checkedTypeWindowsCount_2_2 == 'Глухой),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Откидное')
+            $('#indexConstructorSelectLeaf_2').html('Глухой')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Откидное,' && checkedTypeWindowsCount_2_2 == 'Поворотное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Откидное')
+            $('#indexConstructorSelectLeaf_2').html('Поворотное')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Откидное,' && checkedTypeWindowsCount_2_2 == 'Откидное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Откидное')
+            $('#indexConstructorSelectLeaf_2').html('Откидное')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Откидное,' && checkedTypeWindowsCount_2_2 == 'Поворотно-откидное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Откидное')
+            $('#indexConstructorSelectLeaf_2').html('Поворотно-откидное')
+        }
+
+        if ( checkedTypeWindowsCount_2_1 == '(Поворотно-откидное,' && checkedTypeWindowsCount_2_2 == 'Глухой),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
+            $('#indexConstructorSelectLeaf_2').html('Глухой')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Поворотно-откидное,' && checkedTypeWindowsCount_2_2 == 'Поворотное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
+            $('#indexConstructorSelectLeaf_2').html('Поворотное')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Поворотно-откидное,' && checkedTypeWindowsCount_2_2 == 'Откидное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
+            $('#indexConstructorSelectLeaf_2').html('Откидное')
+        } else if ( checkedTypeWindowsCount_2_1 == '(Поворотно-откидное,' && checkedTypeWindowsCount_2_2 == 'Поворотно-откидное),' ) {
+            $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
+            $('#indexConstructorSelectLeaf_2').html('Поворотно-откидное')
+        }
+        // if ( checkedTypeWindowsCount_1 == '(Глухой),') {
+        //     $('#indexConstructorSelectLeaf_1').html('Глухой')
+        // } else if ( checkedTypeWindowsCount_1 == '(Поворотное),') {
+        //     $('#indexConstructorSelectLeaf_1').html('Поворотное')
+        // } else if ( checkedTypeWindowsCount_1 == '(Откидное),') {
+        //     $('#indexConstructorSelectLeaf_1').html('Откидное')
+        // } else if ( checkedTypeWindowsCount_1 == '(Поворотно-откидное),') {
+        //     $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
+        // }
+
+        // $('#indexConstructorSelectLeaf_1').html('Глухой')
+        // $('#indexConstructorSelectLeaf_2').html('Глухой')
+    }
+
     // if ( checkedTypeWindowsCount_1 == 'Глухой' ) {
     //     $('#checkedTypeWindowsCount_1').html('Глухой')
     // } else if ( checkedTypeWindowsCount_1 == 'Поворотное' ) {
