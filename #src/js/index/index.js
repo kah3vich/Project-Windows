@@ -1,33 +1,36 @@
+//! Стартовый объект
+
 let constructor = {
     1: {
         id: 1,
         leaf_1: 'Глухое',
         leaf_2: 'Глухое'
     },
-    // 2: {
-    //     id: 2,
-    //     leaf_1: 'Глухое'
-    // }
 }
+
+//! Стили для активированного элемента списка 
 
 $('#indexConstructorListElement_1').css('background', 'gray')
 
+//! Айди для элементов списка 
+
 let ids = 1
+
+//! Айди для типов окон
+
 let typeWindows = 1
 
+//! Позиция пользователя на активном элементе списка 
+
 let positionClient = 1
+
+//! Стартовые значения 
+
 let leafs_1 = "Глухое"
 let leafs_2 = "Глухое"
 
-// $('.ind-constructor').on('click', function() {
-//     id = id + 1
-//     let apple = {
-//         id: id,
-//         name: 'Apple'
-//     }
-//     constructor[id] = apple 
-//     console.log(constructor)
-// });
+
+//! Функции передающие значения из выпадающего списка в функцию
 
 function Leaf_1() {
     setTimeout(() => {
@@ -44,6 +47,7 @@ function Leaf_2() {
     }, 0);
 }
 
+//! Функция для переключение активного элемента в списке + передающая данные из элемента в конструктор 
 
 function checkedPositionClient(element) {
     let pos = element.id
@@ -62,7 +66,6 @@ function checkedPositionClient(element) {
     $(`#indexConstructorListElement_${positionClient}`).css('background', 'gray')
 
     let checkedTypeWindows = $(`#indexConstructorListText_${positionClient}`).html().split(' ')[0]
-    // console.log($(`#indexConstructorListText_${positionClient}`).html().split(' ')[2])
     if ( checkedTypeWindows == 'Одностворчатое' ) {
         $('#indexConstructorWindowTabsElement-1').addClass('ind-constructor__block-window-tabs-items-active')
         $('#indexConstructorWindowTabsElement-2').removeClass('ind-constructor__block-window-tabs-items-active')
@@ -81,8 +84,6 @@ function checkedPositionClient(element) {
             $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
         }
 
-        // $('#indexConstructorSelectLeaf_1').html('Глухое')
-        // $('#indexConstructorSelectLeaf_2').html('Глухое')
     } else if ( checkedTypeWindows == 'Двухстворчатое' ) {
         $('#indexConstructorWindowTabsElement-2').addClass('ind-constructor__block-window-tabs-items-active')
         $('#indexConstructorWindowTabsElement-1').removeClass('ind-constructor__block-window-tabs-items-active')
@@ -147,32 +148,19 @@ function checkedPositionClient(element) {
             $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
             $('#indexConstructorSelectLeaf_2').html('Поворотно-откидное')
         }
-        // if ( checkedTypeWindowsCount_1 == '(Глухое),') {
-        //     $('#indexConstructorSelectLeaf_1').html('Глухое')
-        // } else if ( checkedTypeWindowsCount_1 == '(Поворотное),') {
-        //     $('#indexConstructorSelectLeaf_1').html('Поворотное')
-        // } else if ( checkedTypeWindowsCount_1 == '(Откидное),') {
-        //     $('#indexConstructorSelectLeaf_1').html('Откидное')
-        // } else if ( checkedTypeWindowsCount_1 == '(Поворотно-откидное),') {
-        //     $('#indexConstructorSelectLeaf_1').html('Поворотно-откидное')
-        // }
-
-        // $('#indexConstructorSelectLeaf_1').html('Глухое')
-        // $('#indexConstructorSelectLeaf_2').html('Глухое')
     }
-
-    // if ( checkedTypeWindowsCount_1 == 'Глухое' ) {
-    //     $('#checkedTypeWindowsCount_1').html('Глухое')
-    // } else if ( checkedTypeWindowsCount_1 == 'Поворотное' ) {
-    //     $('#checkedTypeWindowsCount_1').html('Поворотное')
-    // } else if ( checkedTypeWindowsCount_1 == 'Откидное' ) {
-    //     $('#checkedTypeWindowsCount_1').html('Откидное')
-    // } else if ( checkedTypeWindowsCount_1 == 'Поворотно-откидное' ) {
-    //     $('#checkedTypeWindowsCount_1').html('Поворотно-откидное')
-    // }
 }
+
+//! Айди для копированых элементов 
+
 let countCopy = -1
+
+//! Дополнительное число для айди копированных элементов 
+
 let countCopyElement = 1000
+
+//! Функция копирующая элемент с его параметрами 
+
 function copyElementList(element) {
     let idElement = element.id
     let valueElement = document.getElementById(`${idElement}`).value
@@ -186,7 +174,6 @@ function copyElementList(element) {
     } else if (valueElement.length == 32) {
         numberElement = Number(valueElement.toString().slice(-4));
     }
-    // let numberElement = (Number(valueElement.toString().slice(-1)))
     let newObj = {}
     newObj = constructor[numberElement]
     constructor[numberElement + 1000 + countCopy] = {
@@ -194,6 +181,13 @@ function copyElementList(element) {
         leaf_1: newObj['leaf_1'],
         leaf_2: newObj['leaf_2']
     } 
+
+    let typeWindowCopy = $(`#indexConstructorListText_${numberElement}`).text();
+    if ( typeWindowCopy.split(' ')[0] == 'Одностворчатое' ) {
+        typeWindows = 1
+    } else if ( typeWindowCopy.split(' ')[0] == 'Двухстворчатое' ) {
+        typeWindows = 2
+    }
 
 
 
@@ -207,17 +201,6 @@ function copyElementList(element) {
     $('#indexConstructorWindowTabsElement-2').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-3').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-4').removeClass('ind-constructor__block-window-tabs-items-active')
-
-    // typeWindows = 1
-    // clearInfoList()
-    // $('#leaf-2').addClass('display-n')
-    // $('.leaf-2-select-item').addClass('display-n')
-
-    // $('#indexConstructorSelectLeaf_1').html('Глухое')
-    // $('#indexConstructorSelectLeaf_2').html('Глухое')
-    // Leaf_1()
-    // Leaf_2()
-
 
     let newElement = document.createElement("li");
         newElement.classList.add("ind-constructor__block-list-items")
@@ -261,16 +244,14 @@ function copyElementList(element) {
             $(`#indexConstructorListElement_${numberElement + countCopyElement + countCopy}`).click()
         }, 1)
 
-        // $('.ind-constructor__block-list-items').css('background', '#fff')
-        // $(`#indexConstructorListElement_${numberElement + 1000 + countCopy}`).css('background', 'gray')
-
         countCopyElement = countCopyElement + countCopyElement
 
         checkDataInfoObject(numberElement + 1000 + countCopy, constructor[numberElement + 1000 + countCopy]['leaf_1'], constructor[numberElement + 1000 + countCopy]['leaf_2'])
         countCopy++
         checkedCountItems()
-
 }
+
+//! Функция передающие параметры из конструктора в элемент списка 
 
 function checkDataInfoObject(ps, f_1, f_2) {
     console.log(ps, f_1, f_2)
@@ -286,6 +267,8 @@ function checkDataInfoObject(ps, f_1, f_2) {
 
 console.log(constructor)
 
+//! Функция для очистки конструктора при переключение типов окон
+
 function clearInfoList() {
     if ( typeWindows == 1) {
         $(`#indexConstructorListText_${positionClient}`).html(`Одностворчатое окно (Глухое), Даухкамерный стеклопакет, Алюминий, Кирпичный`)
@@ -295,6 +278,7 @@ function clearInfoList() {
     }
 }
 
+//! Добавление нового элемента 
 
 $('#indexConstructorButtonAdd').on('click', function() {
     idElementListConstructor()
@@ -371,6 +355,7 @@ $('#indexConstructorButtonAdd').on('click', function() {
         checkedCountItems()
 });
 
+//! Удаление элемента 
 
 function indexConstructorRemoveElement(element) {
     let idElement = element.id
@@ -385,15 +370,13 @@ function indexConstructorRemoveElement(element) {
     checkedCountItems()
 }
 
+//! Функция для счетчика айди элементов 
 
 function idElementListConstructor() {
     ids++
-    // if (ids == 1) {
-    //     $('#indexConstructorBasketListButton_1').addClass('display-n')
-    // } else if (ids == 2) {
-    //     $('#indexConstructorBasketListButton_1').removeClass('display-n')
-    // }
 }
+
+//! Функция для проверки количество элементов в списке -> блокировка кнопки удаления ( если элементов = 1 )
 
 function checkedCountItems() {
     let countList = document.getElementById('indexConstructorList').getElementsByTagName('li').length
@@ -404,6 +387,7 @@ function checkedCountItems() {
         $('#indexConstructorListElement_1').removeAttr('disabled')
     }
 }
+
 checkedCountItems()
 
 
@@ -414,7 +398,7 @@ checkedCountItems()
 
 
 
-
+//! Вкладки - окна и балконы 
 
 $('#indexConstructorTabsElement-1').on('click', function() {
     $(this).addClass('ind-constructor__block-tabs-items-active')
@@ -425,6 +409,7 @@ $('#indexConstructorTabsElement-2').on('click', function() {
     $('#indexConstructorTabsElement-1').removeClass('ind-constructor__block-tabs-items-active')
 });
 
+//! Типы окон от 1 до 4 
 
 $('#indexConstructorWindowTabsElement-1').on('click', function() {
     $(this).addClass('ind-constructor__block-window-tabs-items-active')
@@ -473,7 +458,7 @@ $('#indexConstructorWindowTabsElement-4').on('click', function() {
 
 
 
-
+//! Выпадающий список 1 тип окна 
 
 $(function() {
     $('#leaf-1').css('display', 'none')
@@ -504,6 +489,7 @@ $(function() {
     })
 })
 
+//! Выпадающий список 2 тип окна 
 
 $(function() {
     $('#leaf-2').css('display', 'none')
