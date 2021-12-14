@@ -10,7 +10,7 @@ let constructor = {
 
 //! Стили для активированного элемента списка 
 
-$('#indexConstructorListElement_1').css('background', 'gray')
+// $('#indexConstructorListElement_1').css('background', 'gray')
 
 //! Айди для элементов списка 
 
@@ -416,6 +416,7 @@ $('#indexConstructorWindowTabsElement-1').on('click', function() {
     $('#indexConstructorWindowTabsElement-2').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-3').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-4').removeClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-5').removeClass('ind-constructor__block-window-tabs-items-active')
     typeWindows = 1
     $('#leaf-2').addClass('display-n')
     $('.leaf-2-select-item').addClass('display-n')
@@ -431,6 +432,7 @@ $('#indexConstructorWindowTabsElement-2').on('click', function() {
     $('#indexConstructorWindowTabsElement-1').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-3').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-4').removeClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-5').removeClass('ind-constructor__block-window-tabs-items-active')
     typeWindows = 2
     $('#leaf-2').removeClass('display-n')
     $('.leaf-2-select-item').removeClass('display-n')
@@ -446,6 +448,7 @@ $('#indexConstructorWindowTabsElement-3').on('click', function() {
     $('#indexConstructorWindowTabsElement-2').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-1').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-4').removeClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-5').removeClass('ind-constructor__block-window-tabs-items-active')
     typeWindows = 3
 });
 $('#indexConstructorWindowTabsElement-4').on('click', function() {
@@ -453,6 +456,15 @@ $('#indexConstructorWindowTabsElement-4').on('click', function() {
     $('#indexConstructorWindowTabsElement-2').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-3').removeClass('ind-constructor__block-window-tabs-items-active')
     $('#indexConstructorWindowTabsElement-1').removeClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-5').removeClass('ind-constructor__block-window-tabs-items-active')
+    typeWindows = 4
+});
+$('#indexConstructorWindowTabsElement-5').on('click', function() {
+    $(this).addClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-2').removeClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-3').removeClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-1').removeClass('ind-constructor__block-window-tabs-items-active')
+    $('#indexConstructorWindowTabsElement-4').removeClass('ind-constructor__block-window-tabs-items-active')
     typeWindows = 4
 });
 
