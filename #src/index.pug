@@ -315,7 +315,7 @@
                     .ind-constructor__block-tabs-items#indexConstructorTabsElement-2 Балкон
                 .ind-constructor__block-window 
                     ul.ind-constructor__block-window-tabs 
-                        li.ind-constructor__block-window-tabs-items.ind-constructor__block-window-tabs-items-active#indexConstructorWindowTabsElement-1
+                        li.ind-constructor__block-window-tabs-items#indexConstructorWindowTabsElement-1
                             <svg width="24" height="33" viewBox="0 0 24 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="1" y="1" width="22" height="31" stroke="#1390F0" stroke-width="2"/>
                             </svg>
@@ -336,7 +336,7 @@
                                 <line x1="28" y1="1" x2="28" y2="32" stroke="#1390F0" stroke-width="2"/>
                                 <line x1="14" y1="1" x2="14" y2="32" stroke="#1390F0" stroke-width="2"/>
                             </svg>
-                        li.ind-constructor__block-window-tabs-items#indexConstructorWindowTabsElement-5
+                        li.ind-constructor__block-window-tabs-items.ind-constructor__block-window-tabs-items-active#indexConstructorWindowTabsElement-5
                             <svg width="42" height="46" viewBox="0 0 42 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="1" y="1" width="40" height="44" stroke="#1390F0" stroke-width="2"/>
                                 <line x1="28" y1="14" x2="28" y2="45" stroke="#1390F0" stroke-width="2"/>
@@ -344,9 +344,37 @@
                                 <line x1="1" y1="14" x2="41" y2="14" stroke="#1390F0" stroke-width="2"/>
                             </svg>
                     .ind-constructor__block-window-block 
-                        .ind-constructor__block-window-block-items
-                        .ind-constructor__block-window-block-height 1460
-                        .ind-constructor__block-window-block-width 1600
+                        .ind-constructor__block-window-block-wrapper#typeConstItems-5     
+                            .ind-constructor__block-window-block-items
+                                button.ind-constructor__block-window-block-items-btn ОТКИДНАЯ
+                                button.ind-constructor__block-window-block-items-btn.ind-constructor__block-window-block-items-btn-active ГЛУХАЯ
+                            .ind-constructor__block-window-block-items
+                                .ind-constructor__block-window-block-items-side 
+                                    button.ind-constructor__block-window-block-items-sides ЛЕВ
+                                    button.ind-constructor__block-window-block-items-sides ПРАВ
+                                button.ind-constructor__block-window-block-items-btn ПОВОРОТНАЯ
+                                button.ind-constructor__block-window-block-items-btn ПОВОРОТНО-ОТКИДНАЯ
+                                button.ind-constructor__block-window-block-items-btn.ind-constructor__block-window-block-items-btn-active  ГЛУХАЯ
+                                button.ind-constructor__block-window-block-items-btn СЕТКА
+                            .ind-constructor__block-window-block-items
+                                .ind-constructor__block-window-block-items-side 
+                                    button.ind-constructor__block-window-block-items-sides ЛЕВ
+                                    button.ind-constructor__block-window-block-items-sides ПРАВ
+                                button.ind-constructor__block-window-block-items-btn ПОВОРОТНАЯ
+                                button.ind-constructor__block-window-block-items-btn ПОВОРОТНО-ОТКИДНАЯ
+                                button.ind-constructor__block-window-block-items-btn.ind-constructor__block-window-block-items-btn-active  ГЛУХАЯ
+                                button.ind-constructor__block-window-block-items-btn СЕТКА
+                            .ind-constructor__block-window-block-items
+                                .ind-constructor__block-window-block-items-side 
+                                    button.ind-constructor__block-window-block-items-sides ЛЕВ
+                                    button.ind-constructor__block-window-block-items-sides ПРАВ
+                                button.ind-constructor__block-window-block-items-btn ПОВОРОТНАЯ
+                                button.ind-constructor__block-window-block-items-btn ПОВОРОТНО-ОТКИДНАЯ
+                                button.ind-constructor__block-window-block-items-btn.ind-constructor__block-window-block-items-btn-active  ГЛУХАЯ
+                                button.ind-constructor__block-window-block-items-btn СЕТКА
+
+                        .ind-constructor__block-window-block-height#heightConst 1460
+                        .ind-constructor__block-window-block-width#widthConst  1600
                     .ind-constructor__block-window-controls 
                         .ind-constructor__block-window-home 
                             .ind-constructor__block-window-home-title ТИП ВАШЕГО ДОМА
@@ -411,10 +439,10 @@
 
                         .ind-constructor__block-window-size 
                             .ind-constructor__block-window-size-items 
-                                input(type="text" value="1600" placeholder="Введите размер" id="sizeWidth")
+                                input(type="text" value="1600" placeholder="Введите размер" id="sizeWidth" maxlength="4")
                                 label(for="sizeWidth") ШИРИНА, ММ
                             .ind-constructor__block-window-size-items 
-                                input(type="text" value="1600" placeholder="Введите размер" id="sizeHeight")
+                                input(type="text" value="1460" placeholder="Введите размер" id="sizeHeight" maxlength="4")
                                 label(for="sizeHeight") ШИРИНА, ММ
 
                         .ind-constructor__block-window-windows 
@@ -484,7 +512,23 @@
 
                                     p Энергосбережение
 
-
+                        .ind-constructor__block-window-check 
+                            .ind-constructor__block-window-check-checkbox
+                                input(class="ind-constructor__block-window-check-checkbox__input" type="checkbox" id="checkboxConst_1")
+                                label(class="ind-constructor__block-window-check-checkbox__label" for="checkboxConst_1") Подоконник
+                            .ind-constructor__block-window-check-checkbox
+                                input(class="ind-constructor__block-window-check-checkbox__input" type="checkbox" id="checkboxConst_2")
+                                label(class="ind-constructor__block-window-check-checkbox__label" for="checkboxConst_2") Откосы
+                            .ind-constructor__block-window-check-checkbox
+                                input(class="ind-constructor__block-window-check-checkbox__input" type="checkbox" id="checkboxConst_3")
+                                label(class="ind-constructor__block-window-check-checkbox__label" for="checkboxConst_3") Монтаж
+                            .ind-constructor__block-window-check-checkbox
+                                input(class="ind-constructor__block-window-check-checkbox__input" type="checkbox" id="checkboxConst_4")
+                                label(class="ind-constructor__block-window-check-checkbox__label" for="checkboxConst_4") Отливы
+                            .ind-constructor__block-window-check-checkbox
+                                input(class="ind-constructor__block-window-check-checkbox__input" type="checkbox" id="checkboxConst_5")
+                                label(class="ind-constructor__block-window-check-checkbox__label" for="checkboxConst_5") Доставка
+                            
 
 
                 ul.ind-constructor__block-list#indexConstructorList

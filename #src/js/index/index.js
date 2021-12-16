@@ -535,3 +535,29 @@ $(function() {
 
 
 
+
+
+sizeWidth.oninput = function() {
+    if ( sizeWidth.value.replace(/[A-Za-zА-Яа-яЁё]/, '') == '' ) {
+        widthConst.innerHTML == '1';
+    } else {
+        widthConst.innerHTML = sizeWidth.value.replace(/[A-Za-zА-Яа-яЁё]/, '');
+    }
+};
+sizeHeight.oninput = function() {
+    if ( sizeHeight.value.replace(/[A-Za-zА-Яа-яЁё]/, '') == '' ) {
+        heightConst.innerHTML == '1';
+    } else {
+        heightConst.innerHTML = sizeHeight.value.replace(/[A-Za-zА-Яа-яЁё]/, '');
+    }
+};
+
+
+$('#sizeWidth').on('input', function() {
+    $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
+});
+$('#sizeHeight').on('input', function() {
+    $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
+});
+
+
