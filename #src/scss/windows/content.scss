@@ -1,0 +1,369 @@
+.wind-banner {
+    width: 100%;
+    position: relative;
+    &__block {
+        display: flex;
+        height: 90vh;
+        width: 100%;
+        align-items: stretch;
+        justify-content: space-between;
+        &-content {
+            background: #286CF0;
+            width: 50%;
+            padding: 70px 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            &-type {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+            &-title {
+                margin: 7px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 60px;
+                line-height: 71px;
+                color: #FFFFFF;
+            }
+            &-text {
+                margin: 19px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+            &-price {
+                margin: 44px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 47px;
+                color: #FFFFFF;
+            }
+            &-btn {
+                margin: 35px 0 0 0;
+                padding: 0 53px;
+                height: 53px;
+                background: #FFFFFF;
+                border-radius: 6px;
+            }
+        }
+        &-photo {
+            background: #1390F0;
+            overflow: hidden;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.wind-status {
+    width: 100%;
+    position: relative;
+    &__block {
+        background: #FFFFFF;
+        padding: 110px 0 0 0;
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 490px;
+            margin: 10px 0 0 50px;
+            &-title {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 50px;
+                line-height: 60px;
+                color: #000000;
+            }
+            &-text {
+                margin: 55px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+            }
+        }
+        &-photo {
+            background: #1390F0;
+            width: 636px;
+            height: 556px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto 0;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &__list {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 115px 0;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #FFFFFF;
+            z-index: -10;
+        }
+        &-bg {
+            position: absolute;
+            top: 40%;
+            left: 0;
+            width: 100%;
+            height: 48%;
+            background: #0082E6;
+            transform: translate(0%, -40%);
+            z-index: -7;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 30%;
+                width: 400px;
+                height: 100%;
+                transform: skew(-30deg);
+                background: #1390F0;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 85%;
+                width: 400px;
+                height: 100%;
+                transform: skew(-30deg);
+                background: #1390F0;
+            }
+        }
+        &-wrapper {
+            display: grid;
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 60px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 21px;
+            z-index: 1;
+        }
+        &-items {
+            padding: 27px 24px;
+            background: #286CF0;
+            height: max-content;
+            &-title {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 33px;
+                color: #FFFFFF;
+            }
+            &-line {
+                width: 95%;
+                height: 0px;
+                border-top: 1px solid #FFFFFF;
+                margin: 39px auto;
+            }
+            &-text {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.wind-multi {
+    width: 100%;
+    position: relative;
+    padding: 0 0 80px 0;
+    &__block {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 100%;
+        &-photo {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #1390F0;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-content {
+            width: 55%;
+            padding: 0 115px 0 75px;
+            &-title {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 50px;
+                line-height: 60px;
+                color: #000000;
+            }
+            &-text {
+                margin: 41px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+            }
+            &-list {
+                margin: 41px 0 0 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+            &-items {
+                margin: 0 0 20px 0;
+                padding: 0 0 0 29px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                    border-radius: 50%;
+                    width: 9px;
+                    height: 9px;
+                    background: #286CF0;
+                }
+                &:last-child {
+                    margin: 0;
+                }
+            }
+            &-description {
+                margin: 41px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.wind-new {
+    width: 100%;
+    position: relative;
+    padding: 0 0 80px 0;
+    &__title {
+        width: 100%;
+        margin: 65px auto;
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 60px;
+        color: #000000;
+        text-align: center;
+    }
+    &__block {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 100%;
+        &-photo {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #1390F0;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-content {
+            width: 55%;
+            padding: 0 95px 0 75px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &-text {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+            }
+            &-table {
+                display: grid;
+                margin: 80px 0 0 0;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 38px 28px;
+                width: 100%;
+                padding: 0 0 55px 0;
+            }
+            &-items {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                width: 100%;
+                &-line {
+                    width: 87px;
+                    height: 5px;
+                    background: #C4C4C4;
+                }
+                &-text {
+                    margin: 18px 0 0 0;
+                }
+            }
+        }
+    }
+}

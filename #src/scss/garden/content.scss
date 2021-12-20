@@ -1,0 +1,359 @@
+.garden-banner {
+    width: 100%;
+    position: relative;
+    &__block {
+        display: flex;
+        width: 100%;
+        height: 90vh;
+        align-items: stretch;
+        justify-content: space-between;
+        &-content {
+            background: #286CF0;
+            width: 50%;
+            padding: 70px 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            &-title {
+                margin: 7px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 60px;
+                line-height: 66px;
+                color: #FFFFFF;
+            }
+            &-text {
+                margin: 50px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 27px;
+                color: #FFFFFF;
+            }
+            &-price {
+                margin: 60px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 47px;
+                color: #FFFFFF;
+            }
+            &-btn {
+                margin: 70px 0 0 0;
+                padding: 0 53px;
+                height: 53px;
+                background: #FFFFFF;
+                border-radius: 6px;
+            }
+        }
+        &-photo {
+            background: #1390F0;
+            overflow: hidden;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.garden-table {
+    width: 100%;
+    padding: 130px 0 150px 0;
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(390px, 1fr));
+        gap: 40px 100px;
+        &-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            &-icons {
+                width: 73px;
+                height: 73px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #1390F0;
+                border-radius: 50%;
+            }
+            &-title {
+                margin: 15px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 32px;
+                text-align: center;
+                color: #000000;
+                width: 90%;
+            }
+            &-text {
+                margin: 22px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                text-align: center;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.garden-add {
+    width: 100%;
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 50px 0 0;
+        &-photo {
+            width: 660px;
+            height: 490px;
+            background: #1390F0;
+            overflow: hidden;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-content {
+            width: 490px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &-title {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 60px;
+                color: #000000;
+            }
+            &-text {
+                margin: 36px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.garden-material {
+    width: 100%;
+    padding: 150px 0;
+    &__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+        width: 90%;
+        margin: 0 0 50px 0;
+    }
+    &__block {
+        margin: 100px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        &-photo {
+            width: 660px;
+            height: 583px;
+            background: #1390F0;
+        }
+        &-content {
+            width: 490px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &-title {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 60px;
+                color: #000000;
+            }
+            &-text {
+                margin: 36px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+            }
+            &-price {
+                margin: 57px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 47px;
+                color: #286CF0;
+            }
+            &-btn {
+                padding: 0 53px;
+                height: 53px;
+                background: #286CF0;
+                border-radius: 6px;
+                margin: 35px 0 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                & p {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+.garden-type {
+    width: 100%;
+    & .containers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+        width: 75%;
+    }
+    &__list {
+        width: 963px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        margin: 105px 0 0 0;
+        &-items {
+            width: 281px;
+            height: 217px;
+            overflow: hidden;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.garden-description {
+    width: 100%;
+    padding: 130px 0 0 0;
+    & .containers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__title {
+        width: 90%;
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+    }
+    &__table {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 60px;
+        margin: 100px 0 0 0;
+        &-items {
+            padding: 0 0 0 60px;
+            position: relative;
+            &::after {
+                content: "";
+                width: 28px;
+                height: 28px;
+                background: #286CF0;
+                border-radius: 50%;
+                position: absolute;
+                top: 8px;
+                left: 0;
+            }
+        }
+    }
+    &__text {
+        margin: 100px 0 0 0;
+        width: 90%;
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+        text-align: center;
+        color: #000000;
+    }
+    &__price {
+        margin: 85px 0 0 0;
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 47px;
+        color: #286CF0;
+    }
+    &__btn {
+        margin: 35px 0 0 0;
+        padding: 0 53px;
+        height: 53px;
+        background: #286CF0;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        & p {
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}

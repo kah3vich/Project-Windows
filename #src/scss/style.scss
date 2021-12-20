@@ -19,7 +19,9 @@
 
 @import "fonts";
 @import "index/style";
-
+@import "windows/style";
+@import "door/style";
+@import "garden/style";
 
 //! --------------------------------------------------------------------
 //! Переменные ---------------------------------------------------------
@@ -36,6 +38,9 @@ $bg: #1e4029;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    &:focus {
+        outline: none;
+    }
 }
 body {
     font-family: TT Norms;
@@ -152,13 +157,13 @@ p {
             }
         }
         &-btn {
-            width: 137px;
             height: 31px;
             background: #286CF0;
             border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 0 24px;
             & a {
                 font-style: normal;
                 font-weight: normal;
@@ -449,6 +454,113 @@ p {
                     color: #FBFDFF;
                 }
             }
+        }
+    }
+}
+
+.reviews {
+    width: 100%;
+    padding: 160px 0;
+    &__title {
+        width: 100%;
+        text-align: left;
+        padding: 0 0 0 50px;
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 60px;
+        color: #000000;
+    }
+    &__sliders {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 50px 0 0 0;
+        padding: 0 0 0 70px;
+        justify-content: center;
+        position: relative;
+        &-items {
+            width: 90%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        & .swiper-button-prev {
+            left: -55px;
+            cursor: pointer;
+            &::after {
+                content: none;
+            }
+        }
+        & .swiper-button-next {
+            right: -55px;
+            cursor: pointer;
+            &::after {
+                content: none;
+            }
+        }
+        &-client {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &-name {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+            }
+            &-star {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 0 0 0;
+                & svg {
+                    margin: 0 6px 0 0;
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+            &-number {
+                margin: 20px 0 0 0;
+                width: 150px;
+            }
+        }
+        &-text {
+            margin: 0 0 0 45px;
+            & p {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+            }
+        }
+    }
+    &__btn {
+        margin: 55px 0 0 50px;
+        padding: 0 73px;
+        height: 53px;
+        background: #286CF0;
+        border-radius: 6px;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        & p {
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFF;
         }
     }
 }

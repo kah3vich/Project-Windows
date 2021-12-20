@@ -116,7 +116,6 @@
             &-item {
                 z-index: 3;
                 width: 284px;
-                height: 323px;
                 &-img {
                     height: 229px;
                     width: 100%;
@@ -129,13 +128,12 @@
                 }
                 &-text {
                     width: 284px;
-                    height: 94px;
                     background: #0390FB;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: flex-start;
-                    padding: 3px 0 0 24px;
+                    padding: 3px 24px 12px 24px;
                 }
                 &-title {
                     font-family: TT Norms;
@@ -146,7 +144,7 @@
                     color: #FFFFFF;
                 }
                 &-price {
-                    margin: 0 0 0 48px;
+                    margin: 0 0 0 auto;
                     font-family: TT Norms;
                     font-style: normal;
                     font-weight: bold;
