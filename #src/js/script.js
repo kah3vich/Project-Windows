@@ -1,3 +1,5 @@
+@@include('balcony/balcony.js')
 @@include('header/header.js')
 @@include('door/door.js')
+@@include('accessories/accessories.js')
 @@include('index/index.js')

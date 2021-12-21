@@ -1,0 +1,366 @@
+.acs-banner {
+    width: 100%;
+    position: relative;
+    &__block {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: stretch;
+        justify-content: space-between;
+        &-content {
+            background: #286CF0;
+            width: 50%;
+            padding: 83px 60px 83px 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            &-title {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 60px;
+                line-height: 66px;
+                color: #FFFFFF;
+                width: 400px;
+            }
+            &-text {
+                margin: 45px 0 0 0;
+                width: 400px;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 27px;
+                color: #FFFFFF;
+            }
+        }
+        &-photo {
+            background: #1390F0;
+            overflow: hidden;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.acs-description {
+    width: 100%;
+    padding: 130px;
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 50px 0 0;
+        &-photo {
+            width: 660px;
+            height: 615px;
+            background: #1390F0;
+            overflow: hidden;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-content {
+            width: 490px;
+            & p {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.acs-design {
+    width: 100%;
+    &__title {
+        width: 100%;
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+    }
+    &__tabs {
+        margin: 48px 0 0 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        &-items {
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 60px;
+            text-align: center;
+            position: relative;
+            color: #000000;
+            margin: 0 120px 0 0;
+            cursor: pointer;
+            &:last-child {
+                margin: 0;
+            }
+            &-active {
+                color: #286CF0;
+                &::after {
+                    border-top: 2px solid #286CF0;
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 2px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                width: 154px;
+                height: 0px;
+            }
+        }
+    }
+    &__block {
+        margin: 66px 0 0 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0 0 0 30px;
+        width: 100%;
+        &-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            &-photo {
+                width: 600px;
+                overflow: hidden;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &-type {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 75px 0 0 0;
+                & h3 {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #000000;
+                }
+                & p {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #000000;
+                    margin: 0 0 0 5px;
+                }
+            }
+            &-price {
+                margin: 34px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 47px;
+                color: #286CF0;
+            }
+            &-btn {
+                margin: 35px 0 0 0;
+                padding: 0 53px;
+                height: 53px;
+                background: #286CF0;
+                border-radius: 6px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & p {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+            &-link {
+                margin: 47px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                text-decoration-line: underline;
+                color: #000000;
+            }
+        }
+        &-controls {
+            margin: 0 0 0 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &-title {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 60px;
+                color: #000000;
+            }
+            &-type {
+                margin: 21px 0 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                & h3 {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #000000;
+                    margin: 0 40px 0 0;
+                }
+            }
+            &-tabs {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                height: 45px;
+            }
+            &-items {
+                width: 136px;
+                height: 45px;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+                cursor: pointer;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &-active {
+                    border: 2px solid #1390F0;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+    &__description {
+        width: 615px;
+        margin: 120px auto 50px auto;
+        & p {
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+}
+
+.acs-plus {
+    width: 100%;
+    padding: 30px 0 90px 0;
+    &__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 60px;
+        color: #000000;
+        width: 100%;
+        text-align: center;
+    }
+    &__list {
+        margin: 75px 0 0 0;
+        padding: 0 70px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px 50px;
+        &-items {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &-icons {
+                margin: 0 17px 0 0;
+            }
+            &-text {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+            }
+        }
+    }
+    &__table {
+        margin: 120px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 70px 30px;
+        &-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 310px;
+            &-icons {
+                width: 100px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &-title {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 64px;
+                text-align: center;
+                color: #000000;
+            }
+            &-text {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                text-align: center;
+                color: #000000;
+            }
+        }
+    }
+}

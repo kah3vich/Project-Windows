@@ -22,6 +22,8 @@
 @import "windows/style";
 @import "door/style";
 @import "garden/style";
+@import "balcony/style";
+@import "accessories/style";
 
 //! --------------------------------------------------------------------
 //! Переменные ---------------------------------------------------------
@@ -93,7 +95,10 @@ p {
 .display-g {
     display: grid !important;
 }
-
+.rotate-45 {
+    transition: all 0.5s ease;
+    transform: rotate(45deg);
+}
 
 
 .header {

@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -290,15 +291,105 @@
           </div>
         </div>
         <div class="door-slider__block-controls-list"> 
-          <div class="door-slider__block-controls-items door-slider__block-controls-items-active"><img src="./img/door/slider-1.png" alt="img"></div>
-          <div class="door-slider__block-controls-items"> <img src="./img/door/slider-1.png" alt="img"></div>
-          <div class="door-slider__block-controls-items"> <img src="./img/door/slider-1.png" alt="img"></div>
-          <div class="door-slider__block-controls-items"> <img src="./img/door/slider-1.png" alt="img"></div>
+          <div class="door-slider__block-controls-items door-slider__block-controls-items-active" id="doorSliderButton-1"><img src="./img/door/slider-1.png" alt="img"></div>
+          <div class="door-slider__block-controls-items" id="doorSliderButton-2"><img src="./img/door/slider-1.png" alt="img"></div>
+          <div class="door-slider__block-controls-items" id="doorSliderButton-3"><img src="./img/door/slider-1.png" alt="img"></div>
+          <div class="door-slider__block-controls-items" id="doorSliderButton-4"><img src="./img/door/slider-1.png" alt="img"></div>
         </div>
       </div>
       <div class="door-slider__block-info"> 
         <div class="door-slider__block-info-title">Комплектация</div>
-        <ul class="door-slider__block-info-list"> 
+        <ul class="door-slider__block-info-list" id="doorSliderContent-1">
+          <li class="door-slider__block-info-items"> 
+            <h3>Профиль:</h3>
+            <p>Euro</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Гарнитур:</h3>
+            <p>Нажимной</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Замок:</h3>
+            <p>Многозапорный с личинкой</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Заполнение:</h3>
+            <p>Вверху теплопакет 32 мм</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Уплатнитель:</h3>
+            <p>Черный</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Открывание:</h3>
+            <p>Наружу</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Порог:</h3>
+            <p>Алюминевый</p>
+          </li>
+        </ul>
+        <ul class="door-slider__block-info-list display-n" id="doorSliderContent-2">
+          <li class="door-slider__block-info-items"> 
+            <h3>Профиль:</h3>
+            <p>Euro</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Гарнитур:</h3>
+            <p>Нажимной</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Замок:</h3>
+            <p>Многозапорный с личинкой</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Заполнение:</h3>
+            <p>Вверху теплопакет 32 мм</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Уплатнитель:</h3>
+            <p>Черный</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Открывание:</h3>
+            <p>Наружу</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Порог:</h3>
+            <p>Алюминевый</p>
+          </li>
+        </ul>
+        <ul class="door-slider__block-info-list display-n" id="doorSliderContent-3">
+          <li class="door-slider__block-info-items"> 
+            <h3>Профиль:</h3>
+            <p>Euro</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Гарнитур:</h3>
+            <p>Нажимной</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Замок:</h3>
+            <p>Многозапорный с личинкой</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Заполнение:</h3>
+            <p>Вверху теплопакет 32 мм</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Уплатнитель:</h3>
+            <p>Черный</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Открывание:</h3>
+            <p>Наружу</p>
+          </li>
+          <li class="door-slider__block-info-items"> 
+            <h3>Порог:</h3>
+            <p>Алюминевый</p>
+          </li>
+        </ul>
+        <ul class="door-slider__block-info-list display-n" id="doorSliderContent-4">
           <li class="door-slider__block-info-items"> 
             <h3>Профиль:</h3>
             <p>Euro</p>
@@ -330,7 +421,10 @@
         </ul>
         <div class="door-slider__block-info-add">Узнайте цену по вашим размерам</div>
         <div class="door-slider__block-info-description">Позвоните нам по телефону или воспользуйтесь калькулятором</div>
-        <div class="door-slider__block-info-price">от 14 214 ₽</div>
+        <div class="door-slider__block-info-price" id="doorSliderPrice-1">от 14 214 ₽</div>
+        <div class="door-slider__block-info-price display-n" id="doorSliderPrice-2">от 14 214 ₽</div>
+        <div class="door-slider__block-info-price display-n" id="doorSliderPrice-3">от 14 214 ₽</div>
+        <div class="door-slider__block-info-price display-n" id="doorSliderPrice-4">от 14 214 ₽</div>
         <button class="door-slider__block-info-btn"> 
           <p>Рассчитать стоимость</p>
         </button>

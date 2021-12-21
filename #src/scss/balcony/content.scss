@@ -1,0 +1,766 @@
+.balcony-banner {
+    width: 100%;
+    position: relative;
+    &__block {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: stretch;
+        justify-content: space-between;
+        &-content {
+            background: #286CF0;
+            width: 50%;
+            padding: 46px 60px 50px 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            &-title {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 60px;
+                line-height: 66px;
+                color: #FFFFFF;
+            }
+            &-list {
+                margin: 50px 0 0 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+            &-items {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 21px;
+                color: #FFFFFF;
+                margin: 0 0 20px 0;
+                position: relative;
+                padding: 0 0 0 15px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background: #FFFFFF;
+                }
+                &:last-child {
+                    margin: 0;
+                }
+            }
+            &-price {
+                margin: 45px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 47px;
+                color: #FFFFFF;
+            }
+            &-phone {
+                margin: 80px 0 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            &-input {
+                position: relative;
+                width: 253px;
+                height: 53px;
+                background: #FFFFFF;
+                border-radius: 6px;
+                padding: 14px 15px 15px 15px;
+                & input {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 28px;
+                    text-align: left;
+                    color: #000000;
+                    &::placeholder {
+                        color: #C1C1C1;
+                    }
+                }
+                & label {
+                    position: absolute;
+                    top: -25px;
+                    left: 0;
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #FFFFFF;
+                }
+            }
+            &-btn {
+                margin: 0 0 0 40px;
+                width: 156px;
+                height: 53px;
+                border: 3px solid #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 6px;
+                background: transparent;
+                cursor: pointer;
+                & p {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        &-photo {
+            background: #1390F0;
+            overflow: hidden;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.balcony-text {
+    width: 100%;
+    padding: 82px 0;
+    & .containers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__wrapper {
+        width: 80%;
+        & p {
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 32px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+}
+
+.balcony-table {
+    width: 100%;
+    &__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 60px;
+        color: #000000;
+        width: 100%;
+        text-align: center;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 86px 0 0 0;
+        &-items {
+            width: 385px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        &-icons {
+            width: 73px;
+            height: 73px;
+            border: 2px solid #1390F0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        &-title {
+            margin: 15px 0 0 0;
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 64px;
+            text-align: center;
+            color: #000000;
+        }
+        &-text {
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+}
+
+.balcony-tab {
+    width: 100%;
+    padding: 100px 0;
+    &__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+        width: 100%;
+    }
+    &__tabs {
+        margin: 24px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 88px;
+        &-items {
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            text-align: center;
+            color: #000000;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                left: -30px;
+                width: 154px;
+                height: 0px;
+            }
+            &-active {
+                color: #286CF0;
+                &::after {
+                    border-top: 2px solid #286CF0;
+                }
+            }
+        }
+    }
+    &__list {
+        margin: 95px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        padding: 0 150px;
+        gap: 60px;
+        &-items {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            &-photo {
+                height: 290px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &-title {
+                margin: 13px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 60px;
+                text-align: center;
+                color: #000000;
+            }
+            &-prev {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 60px;
+                text-align: center;
+                text-decoration-line: line-through;
+                color: #737373;
+            }
+            &-price {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 60px;
+                text-align: center;
+                color: #1390F0;
+            }
+            &-text {
+                margin: 4px 0 0 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 25px;
+                text-align: center;
+                color: #000000;
+            }
+            &-btn {
+                width: 232px;
+                height: 53px;
+                background: #286CF0;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                cursor: pointer;
+                margin: 42px 0 0 0;
+                & p {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+.balcony-square {
+    background: #286CF0;
+    padding: 70px 0 130px 0;
+    &__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__list {
+        margin: 100px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        &-items {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        &-icons {
+            width: 73px;
+            height: 73px;
+            border: 2px solid #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-text {
+            margin: 20px 0 0 0;
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.balcony-project {
+    width: 100%;
+    padding: 130px 0;
+    &__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+        width: 100%;
+    }
+    &__list {
+        margin: 76px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        gap: 31px;
+        &-items {
+            width: 100%;
+            height: 176px;
+            background: #286CF0;
+            overflow: hidden;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &__block {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 78px 0 0 0;
+        &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 645px;
+            &-title {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 60px;
+                color: #000000;
+            }
+            &-text {
+                margin: 28px 0 0 0;
+                & p {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #000000;
+                }
+            }
+            &-list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin: 42px 0 0 0;
+            }
+            &-items {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                & h3 {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #000000;
+                }   
+                & p {
+                    margin: 0 0 0 31px;
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 60px;
+                    text-align: center;
+                    color: #000000;
+                }
+            }
+        }
+        &-line {
+            border-right: 2px solid #286CF0;
+            width: 1px;
+            height: 550px;
+        }
+        &-comment {
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &-name {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 60px;
+                text-align: center;
+                color: #000000;
+            }
+            &-star {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 21px 0 0 0;
+                & svg {
+                    margin: 0 6px 0 0;
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+            &-text {
+                margin: 28px 0 0 0;
+                & p {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+.balcony-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__block {
+        background: #286CF0;
+        border-radius: 10px;
+        padding: 48px 89px 37px 89px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        &-title {
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 42px;
+            text-align: center;
+            color: #FFFFFF;
+            width: 500px;
+        }
+        &-phone {
+            position: relative;
+            width: 253px;
+            height: 53px;
+            margin: 81px 0 0 0;
+            background: #FFFFFF;
+            border-radius: 6px;
+            padding: 14px 15px 15px 15px;
+            & input {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 28px;
+                text-align: left;
+                color: #000000;
+                &::placeholder {
+                    color: #C1C1C1;
+                }
+            }
+            & label {
+                position: absolute;
+                top: -32px;
+                left: 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                width: 100%;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+        &-text {
+            margin: 90px 0 0 0;
+            position: relative;
+            & textarea {
+                width: 615px;
+                height: 124px;
+                background: #FFFFFF;
+                border-radius: 6px;
+                padding: 10px;
+                resize: none;
+            }
+            & label {
+                position: absolute;
+                top: -32px;
+                left: 0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                width: 100%;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+        &-btn {
+            padding: 0 41px;
+            height: 53px;
+            border: 3px solid #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            border-radius: 6px;
+            text-align: center;
+            margin: 40px 0 0 0;
+            cursor: pointer;
+            & p {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 28px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.balcony-pay {
+    width: 100%;
+    padding: 150px 0 110px 0;
+    &__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+        width: 100%;
+    }
+    &__list {
+        margin: 85px 0 0 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 70px;
+        &-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            &-icons {
+                width: 88px;
+                height: 88px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &-text {
+                margin: 26px 0 0 0;
+                width: 200px;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 31px;
+                text-align: center;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.balcony-knowledge {
+    width: 100%;
+    padding: 0 0 150px 0;
+    &__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+        width: 100%;
+    }
+    &__text {
+        margin: 63px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        &-add {
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 60px;
+            color: #000000;
+        }
+        &-description {
+            margin: 25px 0 0 0;
+            width: 90%;
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 32px;
+            color: #000000;
+        }
+    }
+    &__accordion {
+        margin: 45px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        &-items {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+        }
+        &-title {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            padding: 19px 0 24px 0;
+            border-top: 1px solid #000000;
+            cursor: pointer;
+            &:last-child {
+                border-bottom: 1px solid #000000;
+            }
+            & p {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 60px;
+                color: #000000;
+            }
+            &-icons {
+                margin: 0 40px 0 auto;
+                transition: all 0.5s ease;
+            }
+        }
+        &-text {
+            width: 100%;
+            padding: 24px;
+            border: 1px solid #000000;
+            margin: 0 0 25px 0;
+        }
+    }
+}
