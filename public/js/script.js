@@ -1,5 +1,6 @@
 $("#balconyBannerPhone").mask("+7(999) 99-99-999");
 $("#balconyFormsPhone").mask("+7(999) 99-99-999");
+$("#acsFormPhone").mask("+7(999) 99-99-999");
 
 $('#balconyTabsItems-1').on('click', () => {
     $('#balconyTabsItems-1').addClass('balcony-tab__tabs-items-active')
@@ -238,7 +239,27 @@ function changeSlide(id) {
     }
 }
 
-
+var acsWorkSliders = new Swiper(".acsWorkSliders", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+    breakpoints: {
+        499: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        }
+    }
+});
 //! Стартовый объект
 
 let constructor = {

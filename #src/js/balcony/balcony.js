@@ -1,5 +1,6 @@
 $("#balconyBannerPhone").mask("+7(999) 99-99-999");
 $("#balconyFormsPhone").mask("+7(999) 99-99-999");
+$("#acsFormPhone").mask("+7(999) 99-99-999");
 
 $('#balconyTabsItems-1').on('click', () => {
     $('#balconyTabsItems-1').addClass('balcony-tab__tabs-items-active')

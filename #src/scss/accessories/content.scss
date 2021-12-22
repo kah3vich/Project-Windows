@@ -364,3 +364,112 @@
         }
     }
 }
+
+.acs-phone {
+    width: 100%;
+    padding: 30px 0 70px 0;
+    &__block {
+        margin: 0 auto;
+        padding: 0 92px;
+        height: 170px;
+        background: #1390F0;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        &-title {
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 64px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        &-input {
+            position: relative;
+            width: 253px;
+            height: 53px;
+            background: #FFFFFF;
+            border-radius: 6px;
+            padding: 14px 15px 15px 15px;
+            & input {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 28px;
+                text-align: left;
+                color: #000000;
+                &::placeholder {
+                    color: #C1C1C1;
+                }
+            }
+        }
+        &-btn {
+            margin: 0 0 0 40px;
+            padding: 0 43px;
+            height: 53px;
+            border: 3px solid #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 6px;
+            background: transparent;
+            & p {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 28px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.acs-work {
+    width: 100%;
+    padding: 70px 0 130px 0;
+    overflow: hidden;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        &-title {
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 60px;
+            text-align: center;
+            color: #040404;
+        }
+        &-sliders {
+            width: 100%;
+            margin: 55px 0 0 0;
+            & .swiper-button-next, .swiper-button-prev, .swiper-pagination {
+                display: none;
+            }
+            &-items {
+                width: 100%;
+                height: 395px;
+                overflow: hidden;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
