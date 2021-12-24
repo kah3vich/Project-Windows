@@ -293,10 +293,11 @@
                     content: "";
                     position: absolute;
                     top: 0;
-                    right: -80px;
+                    right: -38px;
                     width: 333px;
                     height: 433px;
                     transform: skew(-30deg);
+                    z-index: 5;
                     background: rgba(69, 148, 248, 0.5);
                 }
                 & .ind-catalog__block-item-titles {
@@ -315,6 +316,12 @@
                         text-transform: uppercase;
                         color: #000000;
                     }
+                }
+                & .ind-catalog__block-item-banners {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 1;
                 }
             }
             &:nth-child(2) {
