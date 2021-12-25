@@ -150,30 +150,40 @@
         .ind-time__catalog 
             .containers 
                 ul.ind-time__catalog-list
-                    li.ind-time__catalog-list-item 
-                        .ind-time__catalog-list-item-img 
-                            img(src="./img/index/catalog-1.png", alt="img")
-                        .ind-time__catalog-list-item-text 
-                            .ind-time__catalog-list-item-title Пластиковые окна
-                            .ind-time__catalog-list-item-price от 9 100 руб
-                    li.ind-time__catalog-list-item 
-                        .ind-time__catalog-list-item-img 
-                            img(src="./img/index/catalog-2.png", alt="img")
-                        .ind-time__catalog-list-item-text 
-                            .ind-time__catalog-list-item-title Остекление балконов
-                            .ind-time__catalog-list-item-price от 3 900 руб
-                    li.ind-time__catalog-list-item 
-                        .ind-time__catalog-list-item-img 
-                            img(src="./img/index/catalog-3.png", alt="img")
-                        .ind-time__catalog-list-item-text 
-                            .ind-time__catalog-list-item-title Отделка балконов
-                            .ind-time__catalog-list-item-price от 6 700 руб
-                    li.ind-time__catalog-list-item 
-                        .ind-time__catalog-list-item-img 
-                            img(src="./img/index/catalog-4.png", alt="img")
-                        .ind-time__catalog-list-item-text 
-                            .ind-time__catalog-list-item-title Остекление коттеджей
-                            .ind-time__catalog-list-item-price от 10 200 руб
+                    .swiper.indexTimeSlider
+                        .swiper-wrapper
+                            .swiper-slide 
+                                li.ind-time__catalog-list-item 
+                                    .ind-time__catalog-list-item-img 
+                                        img(src="./img/index/catalog-1.png", alt="img")
+                                    .ind-time__catalog-list-item-text 
+                                        .ind-time__catalog-list-item-title Пластиковые окна
+                                        .ind-time__catalog-list-item-price от 9 100 руб
+                            .swiper-slide 
+                                li.ind-time__catalog-list-item 
+                                    .ind-time__catalog-list-item-img 
+                                        img(src="./img/index/catalog-2.png", alt="img")
+                                    .ind-time__catalog-list-item-text 
+                                        .ind-time__catalog-list-item-title Остекление балконов
+                                        .ind-time__catalog-list-item-price от 3 900 руб
+                            .swiper-slide
+                                li.ind-time__catalog-list-item 
+                                    .ind-time__catalog-list-item-img 
+                                        img(src="./img/index/catalog-3.png", alt="img")
+                                    .ind-time__catalog-list-item-text 
+                                        .ind-time__catalog-list-item-title Отделка балконов
+                                        .ind-time__catalog-list-item-price от 6 700 руб
+                            .swiper-slide 
+                                li.ind-time__catalog-list-item 
+                                    .ind-time__catalog-list-item-img 
+                                        img(src="./img/index/catalog-4.png", alt="img")
+                                    .ind-time__catalog-list-item-text 
+                                        .ind-time__catalog-list-item-title Остекление коттеджей
+                                        .ind-time__catalog-list-item-price от 10 200 руб
+                    .swiper-controls 
+                        .swiper-button-next
+                        .swiper-button-prev
+                        .swiper-pagination
 
     section.ind-adds
         .containers 
@@ -272,47 +282,64 @@
     section.ind-services
         .containers 
             ul.ind-services__list 
-                li.ind-services__list-item 
-                    button.ind-services__list-item-btns     
-                        a(href="#") Подробнее
-                    a(href="#").ind-services__list-item-btn 
-                    .ind-services__list-item-title Онлайн оплата
-                    .ind-services__list-item-list 
-                        .ind-services__list-item-list-visa 
-                            <svg width="108" height="36" viewBox="0 0 108 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M46.7346 35.1822H37.938L43.4358 1.39451H52.2334L46.7346 35.1822ZM30.5376 1.39451L22.1513 24.6339L21.1589 19.6296L21.1598 19.6314L18.1998 4.43671C18.1998 4.43671 17.8419 1.39451 14.027 1.39451H0.162684L0 1.96662C0 1.96662 4.23973 2.84872 9.2016 5.82856L16.8441 35.1831H26.0096L40.0049 1.39451H30.5376ZM99.7281 35.1822H107.805L100.763 1.39361H93.6916C90.4262 1.39361 89.6309 3.9116 89.6309 3.9116L76.5113 35.1822H85.6812L87.5151 30.1634H98.6978L99.7281 35.1822ZM90.0484 23.2303L94.6704 10.5862L97.2707 23.2303H90.0484ZM77.1991 9.51968L78.4544 2.26396C78.4544 2.26396 74.5808 0.790771 70.5426 0.790771C66.1772 0.790771 55.8106 2.69869 55.8106 11.9762C55.8106 20.7051 67.9776 20.8136 67.9776 25.3986C67.9776 29.9835 57.0642 29.162 53.4625 26.2707L52.1547 33.8572C52.1547 33.8572 56.0827 35.7652 62.0839 35.7652C68.0869 35.7652 77.143 32.657 77.143 24.1974C77.143 15.4125 64.8667 14.5945 64.8667 10.7751C64.8676 6.9547 73.4347 7.44546 77.1991 9.51968Z" fill="white"/>
-                            </svg>
-                        .ind-services__list-item-list-master 
-                            .ind-services__list-item-list-master-1 
-                            .ind-services__list-item-list-master-2 
-                        .ind-services__list-item-list-mir 
-                            <svg width="148" height="44" viewBox="0 0 148 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.5137 4.77266C24.6773 4.76576 28.1353 4.45712 29.6 9.35609C30.5867 12.6561 32.1584 18.0616 34.3151 25.5727H35.1935C37.5064 17.654 39.0952 12.2485 39.96 9.35609C41.44 4.40609 45.14 4.77275 46.62 4.77275L58.0386 4.77277V39.9727H46.4005V19.2288H45.62L39.1324 39.9727H30.3762L23.8885 19.2134H23.1081V39.9727H11.47V4.77277L23.5137 4.77266ZM74.7506 4.77277V25.5321H75.6791L83.5707 8.46185C85.1026 5.06482 88.3676 4.77277 88.3676 4.77277H99.6298V39.9728H87.7486V19.2134H86.8202L79.0833 36.2837C77.5514 39.6653 74.1317 39.9728 74.1317 39.9728H62.8695V4.77277H74.7506ZM140.696 21.5C139.039 26.1541 133.835 29.4872 128.072 29.4872H115.613V39.9728H104.314V21.5H140.696Z" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M128.617 4.77281H103.722C104.314 12.6095 111.124 19.3183 118.174 19.3183H141.481C142.826 12.805 138.196 4.77281 128.617 4.77281Z" fill="white"/>
-                            </svg>
-                li.ind-services__list-item 
-                    ul.ind-services__list-item-list 
-                        li.ind-services__list-item-list-item
-                            .ind-services__list-item-list-item-title 5
-                                span лет
-                            .ind-services__list-item-list-item-text Гарантийное обслуживание на окна и двери
-                        li.ind-services__list-item-list-item
-                            .ind-services__list-item-list-item-title 10
-                                span лет
-                            .ind-services__list-item-list-item-text Гарантия на фурнитуру
-                        li.ind-services__list-item-list-item
-                            .ind-services__list-item-list-item-title 50 
-                                span лет
-                            .ind-services__list-item-list-item-text Гарантия на профиль
-                    button.ind-services__list-item-btns     
-                        a(href="#") Подробнее
-                    a(href="#").ind-services__list-item-btn 
-                    .ind-services__list-item-title Гарантия и сервис
-                li.ind-services__list-item 
-                    button.ind-services__list-item-btns     
-                        a(href="#") Подробнее
-                    a(href="#").ind-services__list-item-btn 
-                    .ind-services__list-item-title Рассрочка платежа
+                .swiper.indexServicesSlider
+                    .swiper-wrapper
+                        .swiper-slide 
+                            li.ind-services__list-item 
+                                .ind-services__list-item-banners 
+                                    img(src="./img/index/serv-1.png", alt="img")
+                                button.ind-services__list-item-btns     
+                                    a(href="#") Подробнее
+                                a(href="#").ind-services__list-item-btn 
+                                .ind-services__list-item-title Онлайн оплата
+                                .ind-services__list-item-list 
+                                    .ind-services__list-item-list-visa 
+                                        <svg width="108" height="36" viewBox="0 0 108 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.7346 35.1822H37.938L43.4358 1.39451H52.2334L46.7346 35.1822ZM30.5376 1.39451L22.1513 24.6339L21.1589 19.6296L21.1598 19.6314L18.1998 4.43671C18.1998 4.43671 17.8419 1.39451 14.027 1.39451H0.162684L0 1.96662C0 1.96662 4.23973 2.84872 9.2016 5.82856L16.8441 35.1831H26.0096L40.0049 1.39451H30.5376ZM99.7281 35.1822H107.805L100.763 1.39361H93.6916C90.4262 1.39361 89.6309 3.9116 89.6309 3.9116L76.5113 35.1822H85.6812L87.5151 30.1634H98.6978L99.7281 35.1822ZM90.0484 23.2303L94.6704 10.5862L97.2707 23.2303H90.0484ZM77.1991 9.51968L78.4544 2.26396C78.4544 2.26396 74.5808 0.790771 70.5426 0.790771C66.1772 0.790771 55.8106 2.69869 55.8106 11.9762C55.8106 20.7051 67.9776 20.8136 67.9776 25.3986C67.9776 29.9835 57.0642 29.162 53.4625 26.2707L52.1547 33.8572C52.1547 33.8572 56.0827 35.7652 62.0839 35.7652C68.0869 35.7652 77.143 32.657 77.143 24.1974C77.143 15.4125 64.8667 14.5945 64.8667 10.7751C64.8676 6.9547 73.4347 7.44546 77.1991 9.51968Z" fill="white"/>
+                                        </svg>
+                                    .ind-services__list-item-list-master 
+                                        .ind-services__list-item-list-master-1 
+                                        .ind-services__list-item-list-master-2 
+                                    .ind-services__list-item-list-mir 
+                                        <svg width="148" height="44" viewBox="0 0 148 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.5137 4.77266C24.6773 4.76576 28.1353 4.45712 29.6 9.35609C30.5867 12.6561 32.1584 18.0616 34.3151 25.5727H35.1935C37.5064 17.654 39.0952 12.2485 39.96 9.35609C41.44 4.40609 45.14 4.77275 46.62 4.77275L58.0386 4.77277V39.9727H46.4005V19.2288H45.62L39.1324 39.9727H30.3762L23.8885 19.2134H23.1081V39.9727H11.47V4.77277L23.5137 4.77266ZM74.7506 4.77277V25.5321H75.6791L83.5707 8.46185C85.1026 5.06482 88.3676 4.77277 88.3676 4.77277H99.6298V39.9728H87.7486V19.2134H86.8202L79.0833 36.2837C77.5514 39.6653 74.1317 39.9728 74.1317 39.9728H62.8695V4.77277H74.7506ZM140.696 21.5C139.039 26.1541 133.835 29.4872 128.072 29.4872H115.613V39.9728H104.314V21.5H140.696Z" fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M128.617 4.77281H103.722C104.314 12.6095 111.124 19.3183 118.174 19.3183H141.481C142.826 12.805 138.196 4.77281 128.617 4.77281Z" fill="white"/>
+                                        </svg>
+                        .swiper-slide 
+                            li.ind-services__list-item 
+                                .ind-services__list-item-banners 
+                                    img(src="./img/index/serv-2.png", alt="img")
+                                ul.ind-services__list-item-list 
+                                    li.ind-services__list-item-list-item
+                                        .ind-services__list-item-list-item-title 5
+                                            span лет
+                                        .ind-services__list-item-list-item-text Гарантийное обслуживание на окна и двери
+                                    li.ind-services__list-item-list-item
+                                        .ind-services__list-item-list-item-title 10
+                                            span лет
+                                        .ind-services__list-item-list-item-text Гарантия на фурнитуру
+                                    li.ind-services__list-item-list-item
+                                        .ind-services__list-item-list-item-title 50 
+                                            span лет
+                                        .ind-services__list-item-list-item-text Гарантия на профиль
+                                button.ind-services__list-item-btns     
+                                    a(href="#") Подробнее
+                                a(href="#").ind-services__list-item-btn 
+                                .ind-services__list-item-title Гарантия и сервис
+                        .swiper-slide 
+                            li.ind-services__list-item 
+                                .ind-services__list-item-banner 
+                                    img(src="./img/index/serv-3.png", alt="img")
+                                .ind-services__list-item-banners 
+                                    img(src="./img/index/serv-4.png", alt="img")
+                                button.ind-services__list-item-btns     
+                                    a(href="#") Подробнее
+                                a(href="#").ind-services__list-item-btn 
+                                .ind-services__list-item-title Рассрочка платежа
+                .swiper-controls 
+                    .swiper-button-next
+                    .swiper-button-prev
+                    .swiper-pagination
 
     section.ind-constructor
         .containers 

@@ -824,3 +824,61 @@ $('#sizeHeight').on('input', function() {
 
 
 
+
+var indexServicesSlider = new Swiper(".indexServicesSlider", {
+    cssMode: true,
+    navigation: {
+        nextEl: ".ind-services__list .swiper-controls .swiper-button-next",
+        prevEl: ".ind-services__list .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".ind-services__list .swiper-controls .swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+    breakpoints: {
+        1370: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        950: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 0
+        }
+    }
+});
+
+var indexTimeSlider = new Swiper(".indexTimeSlider", {
+    cssMode: true,
+    navigation: {
+        nextEl: ".ind-time__catalog-list .swiper-controls .swiper-button-next",
+        prevEl: ".ind-time__catalog-list .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".ind-time__catalog-list .swiper-controls .swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+    breakpoints: {
+        1250: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 0
+        },
+        1000: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        750: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 0
+        }
+    }
+});
