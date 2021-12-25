@@ -1,0 +1,39 @@
+@media (max-width: 1050px) {
+    .reviews .containers {
+        padding: 0 30px;
+    }
+    .reviews__sliders-items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .reviews__sliders-text {
+        margin: 35px 0 0 0;
+    }
+    .reviews__title {
+        padding: 0;
+    }
+    .reviews__sliders {
+        padding: 0;
+    }
+    .reviews__btn {
+        display: none;
+    }
+    .reviews__sliders {
+        position: relative;
+        & .swiper-controls {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: -75px;
+        }
+    }
+    .reviews__sliders .swiper-button-prev {
+        left: 0px;
+    }
+    .reviews__sliders .swiper-button-next {
+        right: 0px;
+    }
+}

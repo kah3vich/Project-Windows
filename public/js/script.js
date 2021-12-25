@@ -239,6 +239,44 @@ function changeSlide(id) {
     }
 }
 
+
+
+
+
+var doorOptionSliders = new Swiper(".doorOptionSliders", {
+    cssMode: true,
+    navigation: {
+        nextEl: ".door-options__list .swiper-controls .swiper-button-next",
+        prevEl: ".door-options__list .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".door-options__list .swiper-controls .swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+    breakpoints: {
+        1330: {
+            slidesPerView: 5,
+            spaceBetweenSlides: 0
+        },
+        950: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 0
+        },
+        650: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        450: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 0
+        }
+    }
+});
 var acsWorkSliders = new Swiper(".acsWorkSliders", {
     navigation: {
         nextEl: ".swiper-button-next",

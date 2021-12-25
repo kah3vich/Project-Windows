@@ -24,6 +24,7 @@
 @import "garden/style";
 @import "balcony/style";
 @import "accessories/style";
+@import 'media';
 
 //! --------------------------------------------------------------------
 //! Переменные ---------------------------------------------------------
@@ -491,14 +492,14 @@ p {
             justify-content: flex-start;
         }
         & .swiper-button-prev {
-            left: -55px;
+            left: -15px;
             cursor: pointer;
             &::after {
                 content: none;
             }
         }
         & .swiper-button-next {
-            right: -55px;
+            right: -15px;
             cursor: pointer;
             &::after {
                 content: none;

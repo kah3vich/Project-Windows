@@ -12,6 +12,17 @@
         flex-direction: row;
         margin: 0 0 55px 0;
     }
+    .ind-services__list {
+        & .swiper-button-next {
+            display: flex;
+        }
+        & .swiper-button-prev {
+            display: flex;
+        }
+        & .swiper-pagination {
+            display: block;
+        }
+    }
     .ind-constructor__block-window-controls {
         margin: 85px 0 0 0;
     }
@@ -166,6 +177,17 @@
     }
     .ind-time__catalog-list-item-text {
         width: 100%;
+    }
+    .ind-time__catalog-list {
+        & .swiper-button-next {
+            display: flex;
+        }
+        & .swiper-button-prev {
+            display: flex;
+        }
+        & .swiper-pagination {
+            display: block;
+        }
     }
     .ind-time__catalog {
         overflow: visible;

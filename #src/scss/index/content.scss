@@ -113,6 +113,15 @@
         &-list {
             z-index: 3;
             width: 100%;
+            & .swiper-button-next {
+                display: none;
+            }
+            & .swiper-button-prev {
+                display: none;
+            }
+            & .swiper-pagination {
+                display: none;
+            }
             &-item {
                 z-index: 3;
                 width: 284px;
@@ -667,6 +676,15 @@
     &__list {
         display: flex;
         width: 100%;
+        & .swiper-button-next {
+            display: none;
+        }
+        & .swiper-button-prev {
+            display: none;
+        }
+        & .swiper-pagination {
+            display: none;
+        }
         & .swiper-slide {
             &:nth-child(1) {
                 & .ind-services__list-item {
