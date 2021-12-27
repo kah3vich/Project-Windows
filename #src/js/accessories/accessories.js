@@ -9,12 +9,12 @@ var acsWorkSliders = new Swiper(".acsWorkSliders", {
     mousewheel: true,
     keyboard: true,
     breakpoints: {
-        499: {
+        800: {
             slidesPerView: 2,
             spaceBetweenSlides: 0
         },
         0: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetweenSlides: 0
         }
     }

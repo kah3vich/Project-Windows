@@ -5,6 +5,7 @@
         display: flex;
         width: 100%;
         height: 90vh;
+        min-height: 660px;
         align-items: stretch;
         justify-content: space-between;
         &-content {
@@ -71,8 +72,9 @@
     padding: 130px 0 150px 0;
     &__list {
         display: grid;
-        grid-template-columns: repeat(3, minmax(390px, 1fr));
-        gap: 40px 100px;
+        grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+        width: 100%;
+        gap: 40px;
         &-items {
             display: flex;
             flex-direction: column;
@@ -119,7 +121,6 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        padding: 0 50px 0 0;
         &-photo {
             width: 660px;
             height: 490px;

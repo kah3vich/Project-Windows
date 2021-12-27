@@ -1,0 +1,265 @@
+@media (max-width: 1400px) {
+    .balcony-project__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .balcony-project__block-line {
+        display: none;
+    }
+    .balcony-project__block-comment {
+        width: 100%;
+        margin: 45px 0 0 0;
+    }
+    .balcony-project__block-info {
+        width: 100%;
+    }
+    .balcony-knowledge__accordion-title p {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 40px;
+        color: #000;
+        width: 85%;
+    }
+}
+@media (max-width: 1250px) {
+    .balcony-tab__list {
+        padding: 0 30px;
+    }
+    .balcony-table__list {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 55px 35px;
+    }
+}
+@media (max-width: 1200px) {
+    .balcony-banner__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        min-height: 100%;
+        height: 100%;
+    }
+    .balcony-banner__block-photo {
+        width: 100%;
+        min-height: 450px;
+    }
+    .balcony-banner__block-content {
+        width: 100%;
+    }
+}
+@media (max-width: 1100px) {
+    .balcony-tab__list {
+        padding: 0;
+    }
+}
+@media (max-width: 1050px) {
+    .balcony-tab .containers {
+        padding: 0 30px;
+    }
+    .balcony-table .containers {
+        padding: 0 30px;
+    }
+    .balcony-text__wrapper {
+        width: 90%;
+    }
+    .balcony-text .containers {
+        padding: 0 30px;
+    }
+    .balcony-project .containers {
+        padding: 0 30px;
+    }
+    .balcony-pay .containers {
+        padding: 0 30px;
+    }
+    .balcony-knowledge .containers {
+        padding: 0 30px;
+    }
+    .balcony-square__list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 55px 35px;
+    }
+    .balcony-project__list {
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    }
+    .balcony-banner__block-content {
+        padding: 46px 30px 50px 30px;
+    }
+}
+@media (max-width: 1000px) {
+    .balcony-tab__list {
+        margin: 95px 0 75px 0;
+        position: relative;
+        & .swiper-controls {
+            position: absolute;
+            bottom: -75px;
+            left: 0;
+            width: 100%;
+        }
+        & .swiper-button-next, .swiper-button-prev, .swiper-pagination {
+            display: block;
+        }
+        & .swiper-button-next {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            background: #1390F0;
+            border-radius: 28px;
+            opacity: 1;
+            &::after {
+                content: url(../svg/header/arrow-next.svg);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 60px;
+            }
+        }
+        & .swiper-button-prev {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            border: 1px solid #1390F0;
+            height: 56px;
+            background: transparent;
+            opacity: 1;
+            border-radius: 28px;
+            &::after {
+                content: url(../svg/header/arrow-prev.svg);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 60px;
+            }
+        }
+        & .swiper-pagination {
+            bottom: -16px;
+            z-index: 5;
+        }
+        & .swiper-pagination-bullet {
+            width: 29px;
+            height: 5.50px;
+            background: #1390F0;
+            border-radius: 4px;
+            &-active {
+                width: 48.50px;
+                height: 5.50px;
+                background: #1390F0;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+@media (max-width: 850px) {
+    .balcony-form__block {
+        width: 100%;
+        border-radius: 0;
+        padding: 48px 30px 37px 30px;
+    }
+    .balcony-form__block-text textarea {
+        width: 100%;
+    }
+    .balcony-form__block-text {
+        width: 100%;
+    }
+    .balcony-form__block-title {
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .balcony-banner__block-content-phone {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .balcony-banner__block-content-btn {
+        margin: 35px 0 0 0;
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .balcony-banner__block-content-title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 33px;
+        line-height: 40px;
+        color: #fff;
+    }
+    .balcony-text__wrapper {
+        width: 100%;
+    }
+    .balcony-table__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 43px;
+        color: #000;
+        width: 100%;
+        text-align: center;
+    }
+    .balcony-tab__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 35px;
+        text-align: center;
+        color: #000;
+        margin: 0 0 55px 0;
+        width: 100%;
+    }
+    .balcony-square__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+    }
+    .balcony-project__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: #000;
+        width: 100%;
+    }
+    .balcony-knowledge__text-add {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 40px;
+        color: #000;
+    }
+    .balcony-knowledge__accordion-title-icons {
+        margin: auto 0
+    }
+    .balcony-knowledge__accordion-title p {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000;
+        width: 85%;
+    }
+    .balcony-knowledge__accordion-text {
+        width: 100%;
+    }
+}

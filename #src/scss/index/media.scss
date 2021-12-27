@@ -381,27 +381,9 @@
     }
     .ind-catalog__block {
         margin: 24px 0 32px 0;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-auto-columns: 1fr;
-        grid-auto-rows: 1fr;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(auto-fill, 1fr);
-        gap: 12px 12px;
-        grid-template-areas:
-        "indexCatalog-1 indexCatalog-1 indexCatalog-1 indexCatalog-1"
-        "indexCatalog-1 indexCatalog-1 indexCatalog-1 indexCatalog-1"
-        "indexCatalog-2 indexCatalog-2 indexCatalog-2 indexCatalog-2"
-        "indexCatalog-3 indexCatalog-3 indexCatalog-3 indexCatalog-3"
-        "indexCatalog-4 indexCatalog-4 indexCatalog-4 indexCatalog-4"
-        "indexCatalog-5 indexCatalog-5 indexCatalog-5 indexCatalog-5"
-        "indexCatalog-6 indexCatalog-6 indexCatalog-6 indexCatalog-6"
-        "indexCatalog-7 indexCatalog-7 indexCatalog-7 indexCatalog-7"
-        "indexCatalog-7 indexCatalog-7 indexCatalog-7 indexCatalog-7"
-        "indexCatalog-8 indexCatalog-8 indexCatalog-8 indexCatalog-8"
-        "indexCatalog-8 indexCatalog-8 indexCatalog-8 indexCatalog-8"
-        ;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
     }
     .ind-catalog__block-item:nth-child(2) {
         display: flex;
@@ -436,6 +418,9 @@
     .ind-catalog__block-item:nth-child(7),
     .ind-catalog__block-item:nth-child(8) {
         height: 100%;
+    }
+    .ind-catalog__block-item:nth-child(1) .ind-catalog__block-item-titles {
+        padding: 35px 0;
     }
 }
 @media (max-width: 700px) {
@@ -567,5 +552,9 @@
     }
     .ind-services__list .swiper-slide:nth-child(2) .ind-services__list-item .ind-services__list-item-list-item-text {
         margin: 23px 0 0 0;
+    }
+    .ind-catalog__block-item:nth-child(1) .ind-catalog__block-item-titles {
+        margin: 0 0 0 20px;
+        width: 50%;
     }
 }

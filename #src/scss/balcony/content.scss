@@ -5,6 +5,7 @@
         display: flex;
         width: 100%;
         height: 100vh;
+        min-height: 750px;
         align-items: stretch;
         justify-content: space-between;
         &-content {
@@ -176,8 +177,9 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin: 86px 0 0 0;
+        gap: 35px;
         &-items {
-            width: 385px;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -198,7 +200,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 25px;
-            line-height: 64px;
+            line-height: 32px;
             text-align: center;
             color: #000000;
         }
@@ -259,11 +261,17 @@
     }
     &__list {
         margin: 95px 0 0 0;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
         width: 100%;
-        padding: 0 150px;
-        gap: 60px;
+        padding: 0 90px;
+        & .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        & .swiper-button-next, .swiper-button-prev, .swiper-pagination {
+            display: none;
+        }
         &-items {
             width: 300px;
             display: flex;
@@ -357,8 +365,9 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         width: 100%;
+        gap: 35px;
         &-items {
-            width: 300px;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -648,11 +657,11 @@
     }
     &__list {
         margin: 85px 0 0 0;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        gap: 55px 35px;
         width: 100%;
-        padding: 0 70px;
+        padding: 0 30px;
         &-items {
             display: flex;
             flex-direction: column;
@@ -764,7 +773,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
-            line-height: 60px;
+            line-height: 35px;
             color: #000000;
         }
     }

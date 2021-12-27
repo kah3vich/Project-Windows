@@ -1,0 +1,152 @@
+@media (max-width: 1300px) {
+    .garden-banner__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        min-height: 100%;
+        height: 100%;
+    }
+    .garden-banner__block-photo {
+        min-height: 450px;
+        height: 100%;
+        width: 100%;
+    }
+    .garden-banner__block-content {
+        width: 100%;
+    }
+    .garden-add__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .garden-add__block-photo {
+        width: 100%;
+    }
+    .garden-add__block-content {
+        width: 100%;
+        margin: 65px 0 0 0;
+    }
+    .garden-material__title {
+        width: 100%;
+        margin: 0;
+    }
+    .garden-material__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .garden-material__block-photo {
+        width: 100%;
+    }
+    .garden-material__block-content {
+        width: 100%;
+        margin: 65px 0 0 0;
+    }
+}
+@media (max-width: 1100px) {
+    .garden-type__list {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        justify-items: center;
+    }
+    .garden-type__title {
+        width: 100%;
+    }
+    .garden-description__title {
+        width: 100%;
+    }
+}
+@media (max-width: 1050px) {
+    .garden-banner__block-content {
+        padding: 70px 30px;
+    }
+    .garden-table .containers {
+        padding: 0 30px;
+    }
+    .garden-add .containers {
+        padding: 0 30px;
+    }
+    .garden-material .containers {
+        padding: 0 30px;
+    }
+    .garden-description__table {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .garden-description__table-items::after {
+        top: 0;
+    }
+    .garden-description__text {
+        width: 100%;
+    }
+    .garden-description .containers {
+        padding: 0 30px;
+    }
+    .garden-type .containers {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 500px) {
+    .garden-type__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .garden-material__block-photo {
+        height: 400px;
+    }
+    .garden-description__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+        color: #000;
+    }
+    .garden-description__text {
+        margin: 100px 0 0 0;
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 40px;
+        text-align: center;
+        color: #000;
+    }
+    .garden-material__title {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 39px;
+        text-align: center;
+        color: #000;
+    }
+    .garden-table__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
+        width: 100%;
+        gap: 40px;
+    }
+    .garden-banner__block-content-title {
+        margin: 7px 0 0 0;
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 45px;
+        color: #fff;
+    }
+    .garden-add__block-photo {
+        height: 400px;
+    }
+}

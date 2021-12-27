@@ -23,6 +23,34 @@ for ( let i = 1; accordionItemsCount >= i; i++ ) {
         $(`#accordionItems-${i} .balcony-knowledge__accordion-text`).removeClass('display-n')
     });
 }
+
+
+var balconyItes = new Swiper(".balconyItes", {
+    cssMode: true,
+    navigation: {
+        nextEl: ".balcony-tab__list .swiper-controls .swiper-button-next",
+        prevEl: ".balcony-tab__list .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".balcony-tab__list .swiper-controls .swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+    breakpoints: {
+        1330: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        1000: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 0
+        }
+    }
+});
 $(function() {
     $('#city').css('display', 'none')
     $('#city').after('<div class="select-item"><div class="select-placeholder">Москва</div><div id="listConstructorElementPay" class="select-wrapper display-n"></div></div>')
@@ -277,6 +305,10 @@ var doorOptionSliders = new Swiper(".doorOptionSliders", {
         }
     }
 });
+
+
+
+
 var acsWorkSliders = new Swiper(".acsWorkSliders", {
     navigation: {
         nextEl: ".swiper-button-next",
@@ -288,12 +320,12 @@ var acsWorkSliders = new Swiper(".acsWorkSliders", {
     mousewheel: true,
     keyboard: true,
     breakpoints: {
-        499: {
+        800: {
             slidesPerView: 2,
             spaceBetweenSlides: 0
         },
         0: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetweenSlides: 0
         }
     }

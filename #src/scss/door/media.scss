@@ -241,9 +241,11 @@
     .door-slider__block-info-description {
         margin: 9px 0 0 0;
     }
-    .door-slider__block-info-items::after {
-        top: 50%;
-        transform: translate(-50%, 0%);
+    .door-slider__block-info-items {
+        align-items: flex-start;
+    }
+    .door-slider__block-info-items:after {
+        top: 12px;
     }
     .door-status__block-content-title {
         font-size: 30px;
@@ -262,5 +264,8 @@
         & svg {
             width: 50px;
         }
+    }
+    .door-plus__block-table-title {
+        padding: 0 30px;
     }
 }
