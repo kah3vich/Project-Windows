@@ -1,17 +1,3 @@
-# Project Windows
-
-### by kah3vich x bpump
-
-<hr />
-
-# Index: [click me](https://kah3vich.github.io/Project-Windows/public/index.html)
-
-# Windows: [click me](https://kah3vich.github.io/Project-Windows/public/windows.html)
-
-# Door: [click me](https://kah3vich.github.io/Project-Windows/public/door.html)
-
-# Garden: [click me](https://kah3vich.github.io/Project-Windows/public/garden.html)
-
 <div align="center">
   <a href="https://www.vectorlogo.zone/logos/readmeio/readmeio-icon.svg">
     <img width="200" height="200" src="https://www.vectorlogo.zone/logos/readmeio/readmeio-icon.svg">
