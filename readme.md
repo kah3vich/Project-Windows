@@ -1,7 +1,5 @@
 <div align="center">
-  <a href="https://www.vectorlogo.zone/logos/readmeio/readmeio-icon.svg">
-    <img width="200" height="200" src="https://www.vectorlogo.zone/logos/readmeio/readmeio-icon.svg">
-  </a>
+  <img width="200" height="200" src="https://raw.githubusercontent.com/kah3vich/Project-Windows/master/%23src/svg/header/logo.svg">
   <br/>
   <h1>Project Windows</h1>
   <p>
@@ -14,11 +12,13 @@
 
 <div align="center">
     <br/>
-    <h2>🌏 Table of Contents 🌏</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/tableOfContents.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
-### 1. <a href="#install">Install</a>
+### 1. <a href="#script">Script</a>
 
 ### 2. <a href="#description">Description</a>
 
@@ -32,30 +32,40 @@
 
 <!-- ||| -->
 
-<div id="install" align="center">
-    <br/>
-    <h2>🤔 Install 🤔</h2>
-    <br/>
+<div align="center" id="script">
+    <br />
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/script.svg" alt="" width="100%" height="29px">
+    <br />
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
+    <br />
 </div>
 
-### Install with npm:
+### Install dependencies:
 
 ```bash
 npm install
 ```
 
-### Start project:
+### Start dev mode:
 
 ```bash
 npm run gulp
 ```
 
+### Build project:
+
+```bash
+npm run build
+```
+
 <!-- ||| -->
 
-<div id="description" align="center">
-    <br/>
-    <h2>🌟 Description 🌟</h2>
-    <br/>
+<div align="center" id="description">
+    <br />
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/description.svg" alt="" width="100%" height="29px">
+    <br />
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
+    <br />
 </div>
 
 <div align="center">
@@ -64,10 +74,12 @@ npm run gulp
 
 <!-- ||| -->
 
-<div id="link" align="center">
-    <br/>
-    <h2>🔒 Link 🔒</h2>
-    <br/>
+<div align="center" id="link">
+    <br />
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/link.svg" alt="" width="100%" height="29px">
+    <br />
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
+    <br />
 </div>
 
 ### 1. <a href="https://kah3vich.github.io/Project-Windows/public/index.html">Index</a>
@@ -80,10 +92,12 @@ npm run gulp
 
 <!-- ||| -->
 
-<div id="stack" align="center">
-    <br/>
-    <h2>🔥 Languages & Frameworks & Tools & Abilities 🔥</h2>
-    <br/>
+<div align="center" id="stack">
+    <br />
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/stack.svg" alt="" width="100%" height="29px">
+    <br />
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
+    <br />
 </div>
 
 <table align="center">
@@ -128,10 +142,12 @@ npm run gulp
 
 <!-- ||| -->
 
-<div id="team" align="center">
-    <br/>
-    <h2>🧠 Core Team 🧠</h2>
-    <br/>
+<div align="center" id="team">
+    <br />
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/team.svg" alt="" width="100%" height="29px">
+    <br />
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
+    <br />
 </div>
 
 <table align="center">
@@ -153,12 +169,18 @@ npm run gulp
 
 <!-- ||| -->
 
-<div id="license" align="center">
-    <br/>
-    <h2>✅ License ✅</h2>
-    <br/>
+<div align="center" id="license">
+    <br />
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/license.svg" alt="" width="100%" height="29px">
+    <br />
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
+    <br />
 </div>
 
-## [GNU - free software license.](LICENSE)
+<a href="https://github.com/kah3vich/Project-Windows/blob/master/LICENSE">
+  <br/>
+  <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/licenseContent.svg" alt="" width="100%" height="29px">
+  <br/>
+</a>
 
-<!-- ! by kah3vich -->
+<!--| 🔥 by kah3vich 🔥 -->
